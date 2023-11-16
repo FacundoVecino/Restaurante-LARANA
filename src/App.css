@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'TAN-PEARL-Regular';
+  src: url(/assets/fonts/TAN-PEARL-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'TAN-PEARL-Regular';
+  color: #E8D191;
+  background-color: #4D000D;
+}
