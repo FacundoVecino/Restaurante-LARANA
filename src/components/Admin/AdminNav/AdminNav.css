@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url(../../../assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+.nav {
+  font-family: 'Nunito';
+  font-size: 18px;
+}
+
+.nav-link {
+  text-decoration: none !important;
+  color: #E8D191 !important;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
