@@ -1,6 +1,12 @@
-const RegisterView = () => {
+import RegisterForm from "../components/Register/RegisterForm";
+
+const LoginView = () => {
   return (
-    <div>RegisterView</div>
-  )
-}
-export default RegisterView
+    <> 
+    <section className="container py-5 form-center">
+      <RegisterForm />
+      </section>
+    </>
+  );
+};
+export default LoginView;

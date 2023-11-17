@@ -1,0 +1,18 @@
+
+form {
+    border-radius: 40px !important;
+    background: rgba(22, 4, 4, 0.95) !important;
+    padding: 1rem; 
+    box-sizing: border-box;
+    width: 800px;
+  }
+  
+  h1 {
+    color: #E8D191 !important;
+  }
+  
+.form-center{
+display:flex;
+justify-content: center;
+align-content: center;
+  }

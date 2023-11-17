@@ -1,0 +1,33 @@
+ @font-face {
+    font-family: 'TAN-PEARL-Regular';
+    src: url(./assets/fonts/TAN-PEARL-Regular.otf);
+  } 
+  
+  /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  
+  body {
+    font-family: 'TAN-PEARL-Regular';
+    color: #E8D191;
+    background-color: #4D000D;
+  }
+  
+  /* #root {
+    display: flex !important;
+    flex-direction: column;
+    min-height: 100vh;
+  } */
+  
+  /* main {
+    margin-top: 56px;
+    margin-bottom: 25px;
+    flex: 1 0 auto;
+  } */
+  
+  /* footer {
+    background: #2E0008;
+    flex-shrink: 0;
+  } */

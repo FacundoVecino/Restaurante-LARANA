@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "firstname": "Nadie",
+      "lastname": "Nadie",
+      "username": "Mauricio",
+      "password": "Aa1*bbbb",
+      "isAdmin": false,
+      "id": 1
+    },
+    {
+      "firstname": "Nadie",
+      "lastname": "Nadie",
+      "username": "mau_gunsett@hotmail.com",
+      "password": "Aa1*bbbb",
+      "isAdmin": false,
+      "id": 2
+    },
+    {
+      "firstname": "Nadie",
+      "lastname": "Nadie",
+      "username": "Nadie",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 3
+    },
+    {
+      "firstname": "Mauricio20",
+      "lastname": "Gunsett",
+      "username": "maumau",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "Aa1*bbbb",
+      "isAdmin": false,
+      "id": 4
+    },
+    {
+      "firstname": "Nadie",
+      "lastname": "Nadie",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 5
+    }
+  ]
+}

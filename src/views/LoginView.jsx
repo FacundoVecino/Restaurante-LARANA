@@ -1,12 +1,13 @@
-import LoginForm from "../components/Login/LoginForm"
+import LoginForm from "../components/Login/LoginForm";
+
 
 const LoginView = () => {
   return (
-    <section className="container">
-      <div>
-        <LoginForm/>
-        </div>
-    </section>
-  )
-}
-export default LoginView
+    <>
+      <section className="container mt-5 form-center">
+        <LoginForm />
+      </section>
+    </>
+  );
+};
+export default LoginView;
