@@ -1,15 +1,34 @@
 import { useForm } from "react-hook-form";
-import Input from "../../../Input/Input";
-import './AdminForm.css'
-import Textarea from "../../../Textarea/Textarea";
-import Button from "../../../Button/Button";
+import { generateId } from "../../../../helpers/helpers.js";
+import { toast } from "sonner";
 
-const AdminForm = () => {
-  const { register, handleSubmit: onSubmitRHF } = useForm();
+import Input from "../../../Input/Input.jsx";
+import Textarea from "../../../Textarea/Textarea.jsx";
+import Button from "../../../Button/Button.jsx";
+
+import "./AdminForm.css";
+
+
+const AdminForm = (props) => {
+  const { setProducts } = props
+
+  const {
+    register,
+    handleSubmit: onSubmitRHF,
+    formState: { errors },
+    reset
+  } = useForm();
 
   const handleSubmit = (data) => {
-    console.log(data)
-  }
+    console.log(data);
+
+    const newProduct = { ...data, id: generateId() };
+    setProducts(newProduct);
+
+    toast.success('Producto guardado correctamente');
+    
+    reset()
+  };
 
   return (
     <form className="py-5" onSubmit={onSubmitRHF(handleSubmit)}>
@@ -19,12 +38,13 @@ const AdminForm = () => {
         options={{
           required: true,
           minLength: 4,
-          pattern: /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png|webp|jpeg)/
+          pattern: /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png|webp|jpeg)/i,
         }}
-        className='my-4'
-        type='url'
-        label='Image'
-        name='image-url'
+        className="my-4"
+        type="url"
+        label="Image"
+        name="image"
+        error={!!errors.image}
       />
       <Input
         register={register}
@@ -33,9 +53,10 @@ const AdminForm = () => {
           minLength: 4,
           maxLength: 30,
         }}
-        className='my-4'
-        label='Name'
-        name='name'
+        className="my-4"
+        label="Name"
+        name="name"
+        error={!!errors.name}
       />
       <Input
         register={register}
@@ -45,10 +66,11 @@ const AdminForm = () => {
           maxLength: 30,
           pattern: /^\$\d{1,},\d{2}$/,
         }}
-        className='my-4'
-        type='text'
-        label='Cost USD'
-        name='cost'
+        className="my-4"
+        type="text"
+        label="Cost USD"
+        name="cost"
+        error={!!errors.cost}
       />
       <Textarea
         register={register}
@@ -57,9 +79,10 @@ const AdminForm = () => {
           minLength: 5,
           maxLength: 3000,
         }}
-        className='my-4'
-        label='Ingredients'
-        name='ingredients'
+        className="my-4"
+        label="Ingredients"
+        name="ingredients"
+        error={!!errors.ingredients}
       />
       <Button />
     </form>

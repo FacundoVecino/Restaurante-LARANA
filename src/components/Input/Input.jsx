@@ -1,3 +1,4 @@
+
 import './Input.css'
 
 const Input = (props) => {
@@ -8,6 +9,7 @@ const Input = (props) => {
     options = {},
     register,
     className = '',
+    error = false,
   } = props;
 
   return (
@@ -15,10 +17,10 @@ const Input = (props) => {
       <input
         type={type}
         id={`${name}-input`}
+        className={`form-control ${error ? 'is-invalid' : ''}`}
         placeholder=''
         {...register(name, options)}
-      />
-      <label htmlFor={`${name}-input`}>{label}</label>
+      />      <label htmlFor={`${name}-input`}>{label}</label>
     </fieldset>
   );
 };

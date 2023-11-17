@@ -1,23 +1,11 @@
-import { useState } from "react";
 import "./Button.css";
 
 const Button = () => {
-  const [showOverlay, setShowOverlay] = useState(false);
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    setShowOverlay(true);
-
-    setTimeout(() => {
-      setShowOverlay(false);
-    }, 500);
-  };
 
   return (
     <div className="px-5">
-      <button type="submit" onClick={handleClick}>
+      <button type="submit">
         Create
-        {showOverlay && <span className="overlay" />}
       </button>
     </div>
   );

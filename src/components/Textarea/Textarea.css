@@ -7,12 +7,13 @@ fieldset{
 textarea {
   position: relative;
   width: 100%;
-  padding: 1em;
-  border: none;
-  background: transparent;
+  padding: 1em !important;
+  border: none !important;
+  background-color: transparent !important;
   outline: none;
-  color: #E8D191;
-  border-bottom: 1px solid #E8D191;
+  color: #E8D191 !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #E8D191 !important;
 }
 
 label {

@@ -1,4 +1,5 @@
 import logoLarana from '../../../assets/images/logoLarana.png';
+
 import './AdminTitle.css';
 
 const AdminTitle = () => {

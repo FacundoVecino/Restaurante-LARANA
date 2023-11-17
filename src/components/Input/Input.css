@@ -1,4 +1,4 @@
-fieldset{
+fieldset {
   font-family: 'Nonito';
   font-size: 18px;
   position: relative;
@@ -7,12 +7,17 @@ fieldset{
 input {
   position: relative;
   width: 100%;
-  padding: .7em;
-  border: none;
-  background: transparent;
+  padding: .7em !important;
+  border: none !important;
+  background-color: transparent !important;
   outline: none;
-  color: #E8D191;
-  border-bottom: 1px solid #E8D191;
+  color: #E8D191 !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #E8D191 !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
 }
 
 label {
