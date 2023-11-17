@@ -1,7 +1,9 @@
+import AdminTable from "./AdminTable/AdminTable"
+
 const AdminProducts = () => {
   return (
     <>
-      <div>AdminProducts</div>
+      <AdminTable />
     </>
     
   )

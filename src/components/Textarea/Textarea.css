@@ -1,0 +1,32 @@
+fieldset{
+  font-family: 'Nonito';
+  font-size: 18px;
+  position: relative;
+}
+
+textarea {
+  position: relative;
+  width: 100%;
+  padding: 1em;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #E8D191;
+  border-bottom: 1px solid #E8D191;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  padding-left: 3rem;
+  transition: 300ms ease;
+}
+
+fieldset textarea:focus + label,
+fieldset textarea:not(:placeholder-shown) + label {
+  top: 0;
+}

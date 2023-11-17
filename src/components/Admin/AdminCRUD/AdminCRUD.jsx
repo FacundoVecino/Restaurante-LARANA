@@ -1,8 +1,10 @@
+import AdminForm from "./AdminForm/AdminForm"
+
 const AdminCRUD = () => {
   return (
-    <>
-      <div>AdminCRUD</div>
-    </>
+    <section className="d-flex justify-content-center">
+      <AdminForm />
+    </section>
     
   )
 }
