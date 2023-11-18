@@ -42,6 +42,42 @@
       "password": "aA1*bbbb",
       "isAdmin": false,
       "id": 5
+    },
+    {
+      "firstname": "Nadie",
+      "lastname": "Nadie",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 6
+    },
+    {
+      "firstname": "loco",
+      "lastname": "loco",
+      "username": "loquin",
+      "email": "mauricioloana@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 7
+    },
+    {
+      "firstname": "loco10",
+      "lastname": "loco10",
+      "username": "loquin10",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 8
+    },
+    {
+      "firstname": "Nadie",
+      "lastname": "Nadie",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 9
     }
   ]
 }

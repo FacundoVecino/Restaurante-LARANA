@@ -4,10 +4,9 @@ import "./Button.css";
 const Button = () => {
   const [showOverlay, setShowOverlay] = useState(false);
 
-  const handleClick = (e) => {
-    e.preventDefault();
+  const handleClick = () => {
     setShowOverlay(true);
-
+  
     setTimeout(() => {
       setShowOverlay(false);
     }, 500);

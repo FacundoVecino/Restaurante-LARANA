@@ -16,7 +16,7 @@ const Input = (props) => {
       <input
         type={type}
         id={`${name}-input`}
-        className={` ${error ? "is-invalid" : ''} `}
+        className={`form-control ${error ? "is-invalid" : ''} `}
         placeholder=""
         {...register(name, options)}
       />

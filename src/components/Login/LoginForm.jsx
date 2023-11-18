@@ -10,6 +10,7 @@ import { postLoginFn } from "../../api/auth";
 
 import Input from "../Input/Input";
 import './LoginForm.css'
+import Button from "../button/Button";
 
 const LoginForm = () => {
   //ZUSTAND----------------------------------------------------------------
@@ -67,7 +68,7 @@ const LoginForm = () => {
         name="email"
         register={register}
         error={!!errors?.email}
-        className="mb-2"
+        className="my-4"
         options={{
           minLength: 3,
           maxaLength:25,
@@ -79,6 +80,7 @@ const LoginForm = () => {
         type="password"
         placeholder="Ingrese su contraseña"
         name="password"
+        className="my-4"
         register={register}
         error={!!errors?.password}
         options={{
@@ -87,10 +89,10 @@ const LoginForm = () => {
           required: true,
         }}
       />
-      <button className="btn btn-primary w-100 mt-2" type="submit">
-        Ingresar
-      </button>
-      <p className="mb-0 mt-4">
+      <div>
+      <Button/>
+      </div>
+      <p className="mb-0 mt-4 text-center">
         Sos nuevo?<Link to="/register"> Registraté acá</Link>
       </p>
     </form>

@@ -9,6 +9,7 @@ import { postUserFn } from "../../api/users";
  import { useSession } from "../../stores/useSession";
 
 import Input from "../Input/Input";
+import Button from "../button/Button";
 
 
 
@@ -55,6 +56,7 @@ const RegisterForm = () => {
   };
   // RENDER --------------------------------------------------------------
   return (
+    <section className="form-container">
     <form onSubmit={onSubmitRHF(handleSubmit)} className="py-4">
       <Input
         label="Nombre"
@@ -121,12 +123,9 @@ const RegisterForm = () => {
           required: true,
         }}
       />
-      <div>
-      <button className="btn btn-primary w-100 mt-2" type="submit">
-        Registrarse
-      </button>
-      </div>
+      <Button />
     </form>
+    </section>
   );
 };
 export default RegisterForm;

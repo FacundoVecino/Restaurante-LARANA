@@ -1,7 +1,7 @@
 
 form {
     border-radius: 40px !important;
-    background: rgba(22, 4, 4, 0.95) !important;
+    background: #160404f2 !important;
     padding: 1rem; 
     box-sizing: border-box;
     width: 800px;
@@ -15,4 +15,5 @@ form {
 display:flex;
 justify-content: center;
 align-content: center;
-  }
+}
+
