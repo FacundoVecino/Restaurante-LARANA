@@ -1,3 +1,6 @@
+body {
+  background-color: #4D000D;
+}
 .navbar {
     position: fixed;
     bottom: 0;

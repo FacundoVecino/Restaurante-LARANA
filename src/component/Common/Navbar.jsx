@@ -1,5 +1,5 @@
 import { FaHome, FaShoppingCart, FaPlus, FaUser } from 'react-icons/fa';
-import './Navbar.css'; // Importa tu archivo de estilos
+import './Navbar.css'; 
 
 const Navbar = () => {
   return (
