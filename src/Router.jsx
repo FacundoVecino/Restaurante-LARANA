@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import HomeView from "./views/HomeView.jsx";
+import MainView from "./views/MainView";
 import LoginView from "./views/LoginView.jsx";
 import DetailsView from "./views/DetailsView.jsx";
 import ErrorView from "./views/ErrorView.jsx";
@@ -16,12 +16,13 @@ import Footer from "./components/Common/Footer.jsx";
 import "./App.css";
 
 const AppRouter = () => {
+
   return (
-    <BrowserRouter>
+<BrowserRouter>
       <Navbar />
       <main className="container py-3">
         <Routes>
-          <Route path="/" element={<HomeView />} />
+          <Route path="/" element={<MainView />} />
           <Route path="login" element={<LoginView />} />
           <Route path="details" element={<DetailsView />} />
           <Route path="*" element={<ErrorView />} />
@@ -37,4 +38,5 @@ const AppRouter = () => {
   );
 };
 
-export default AppRouter;
+
+export default AppRouter
