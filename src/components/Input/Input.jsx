@@ -20,7 +20,8 @@ const Input = (props) => {
         className={`form-control ${error ? 'is-invalid' : ''}`}
         placeholder=''
         {...register(name, options)}
-      />      <label htmlFor={`${name}-input`}>{label}</label>
+      />
+      <label className='input-label' htmlFor={`${name}-input`}>{label}</label>
     </fieldset>
   );
 };

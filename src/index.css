@@ -3,6 +3,11 @@
   src: url(./assets/fonts/TAN-PEARL-Regular.otf);
 }
 
+@font-face {
+  font-family: 'Nunito';
+  src: url(./assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;

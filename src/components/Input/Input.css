@@ -1,10 +1,15 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url(../../assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
 fieldset {
-  font-family: 'Nonito';
+  font-family: 'Nunito';
   font-size: 18px;
   position: relative;
 }
 
-input {
+.form-control {
   position: relative;
   width: 100%;
   padding: .7em !important;
@@ -20,7 +25,7 @@ input {
   box-shadow: none !important;
 }
 
-label {
+.input-label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -31,7 +36,7 @@ label {
   transition: 300ms ease;
 }
 
-fieldset input:focus + label,
-fieldset input:not(:placeholder-shown) + label {
+fieldset .form-control:focus + .input-label,
+fieldset .form-control:not(:placeholder-shown) + .input-label {
   top: 0;
 }

@@ -5,9 +5,9 @@ import { toast } from "sonner";
 import Input from "../../../Input/Input.jsx";
 import Textarea from "../../../Textarea/Textarea.jsx";
 import Button from "../../../Button/Button.jsx";
+import ToggleSwitch from "../../../ToggleSwitch/ToggleSwitch.jsx";
 
 import "./AdminForm.css";
-
 
 const AdminForm = (props) => {
   const { setProducts } = props
@@ -83,6 +83,15 @@ const AdminForm = (props) => {
         label="Ingredients"
         name="ingredients"
         error={!!errors.ingredients}
+      />
+      <ToggleSwitch
+        register={register}
+        options={{
+          required: true,
+        }}
+        className='my-4'
+        name='available'
+        error={!!errors.available}
       />
       <Button />
     </form>

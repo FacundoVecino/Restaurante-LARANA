@@ -16,7 +16,7 @@ textarea {
   border-bottom: 1px solid #E8D191 !important;
 }
 
-label {
+.textarea-label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -27,7 +27,7 @@ label {
   transition: 300ms ease;
 }
 
-fieldset textarea:focus + label,
-fieldset textarea:not(:placeholder-shown) + label {
+fieldset textarea:focus + .textarea-label,
+fieldset textarea:not(:placeholder-shown) + .textarea-label {
   top: 0;
 }
