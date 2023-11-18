@@ -5,6 +5,7 @@ const MainView = () => {
     <section className="sec-main">
       <h1 className="text-center mb-5">Cuál es tu comida para esta noche?</h1>
       <CardModal />
+      <CardModal />
     </section>
   );
 };

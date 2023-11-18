@@ -1,8 +1,8 @@
-import "./CardModal.css"
+import "./CardModal.css";
 
 const NewModal = () => {
   return (
-    <div>
+    <div className="componentContainer">
       <article
         className="menuCard gap-2 ms-2 me-2 mb-5"
         data-bs-toggle="modal"
@@ -49,10 +49,14 @@ const NewModal = () => {
               ></button>
             </div>
             <div className="card customModal mb-1 mx-3">
-              <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/7fd9e77b-3396-49f3-be08-fceef56376bf/Derivates/8a096b0f-382a-47ac-b11a-62b630e0e59e.jpg" className="card-img-top" alt="Plato" />
+              <img
+                src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/7fd9e77b-3396-49f3-be08-fceef56376bf/Derivates/8a096b0f-382a-47ac-b11a-62b630e0e59e.jpg"
+                className="card-img-top"
+                alt="Plato"
+              />
               <div className="card-body">
                 <h5 className="card-title">Plato</h5>
-                <div className="scrollText">
+                <div className="scrollText ">
                   <p className="card-text">
                     ¿Sabías que la milanesa napolitana se creó con el fin de
                     disimular las milanesas quemadas? Pues sí, en el bodegón
@@ -61,7 +65,7 @@ const NewModal = () => {
                     se dieran cuenta que se les quemó.
                   </p>
                 </div>
-                <h6 className="modal-foodPrice mt-2">Precio</h6>
+                <h6 className="foodPrice mt-2">Precio</h6>
                 <div className="text-center">
                   <button className="customBtnModal">Add to cart</button>
                 </div>
