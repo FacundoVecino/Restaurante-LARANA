@@ -9,8 +9,7 @@ import { postUserFn } from "../../api/users";
  import { useSession } from "../../stores/useSession";
 
 import Input from "../Input/Input";
-import Button from "../button/Button";
-
+import ButtonRegisterLogin from "./ButtonRegisterLogin";
 
 
 const RegisterForm = () => {
@@ -56,27 +55,28 @@ const RegisterForm = () => {
   };
   // RENDER --------------------------------------------------------------
   return (
-    <section className="form-container">
+    <div>
     <form onSubmit={onSubmitRHF(handleSubmit)} className="py-4">
       <Input
         label="Nombre"
         name="firstname"
         register={register}
         error={!!errors?.firstname}
-        className="my-4"
+        className="my-2"
         options={{
           minLength: 3,
           maxaLength: 25,
           required: true,
         }}
-      />
+        />
+        
 
       <Input
         label="Apellido"
         name="lastname"
         register={register}
         error={!!errors?.lastname}
-        className="my-4"
+        className="my-2"
         options={{
           minLength: 3,
           maxaLength: 25,
@@ -89,7 +89,7 @@ const RegisterForm = () => {
         name="username"
         register={register}
         error={!!errors?.username}
-        className="my-4"
+        className="my-2"
         options={{
           minLength: 3,
           maxaLength: 25,
@@ -101,21 +101,20 @@ const RegisterForm = () => {
         name="email"
         register={register}
         error={!!errors?.email}
-        className="my-4"
+        className="my-2"
         options={{
           minLength: 3,
           maxaLength: 25,
           required: true,
         }}
       />
-
       <Input
         label="Contraseña"
         type="password"
         name="password"
         register={register}
         error={!!errors?.password}
-        className="my-4"
+        className="mb-4"
         options={{
           minLength: 8,
           maxaLength: 15,
@@ -123,9 +122,9 @@ const RegisterForm = () => {
           required: true,
         }}
       />
-      <Button />
+      <ButtonRegisterLogin/>
     </form>
-    </section>
+    </div>
   );
 };
 export default RegisterForm;

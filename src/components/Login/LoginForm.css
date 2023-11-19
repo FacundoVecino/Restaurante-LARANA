@@ -1,19 +1,34 @@
-
 form {
-    border-radius: 40px !important;
-    background: #160404f2 !important;
-    padding: 1rem; 
-    box-sizing: border-box;
-    width: 800px;
-  }
-  
-  h1 {
-    color: #E8D191 !important;
-  }
-  
-.form-center{
-display:flex;
-justify-content: center;
-align-content: center;
+  border-radius: 40px !important;
+  background: #160404f2 !important;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
+
+h1 {
+  color: #e8d191 !important;
+}
+
+.imgRegister {
+  background: url(../../assets/Copas.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  
+}
+.logo {
+width: 10%;
+}
+
+@media (width < 768px) {
+  .imgRegister {
+    height: 100vh;
+    background-size: auto;
+  background-position: center;
+    
+  }
+}
+.login-img{
+  border-radius: 40px;
+}

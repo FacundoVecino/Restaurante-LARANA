@@ -35,3 +35,4 @@ fieldset input:focus + label,
 fieldset input:not(:placeholder-shown) + label {
   top: 0;
 }
+

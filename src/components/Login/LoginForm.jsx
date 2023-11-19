@@ -10,7 +10,7 @@ import { postLoginFn } from "../../api/auth";
 
 import Input from "../Input/Input";
 import './LoginForm.css'
-import Button from "../button/Button";
+import ButtonRegisterLogin from "../Register/ButtonRegisterLogin";
 
 const LoginForm = () => {
   //ZUSTAND----------------------------------------------------------------
@@ -61,7 +61,7 @@ const LoginForm = () => {
   // RENDER ----------------------------------------------------------- 
 
   return (
-    <form onSubmit={onSubmitRHF(handleSubmit)}>
+    <form onSubmit={onSubmitRHF(handleSubmit)} className="text-center">
       <Input
         label="Email"
         placeholder="Ingrese su email"
@@ -89,11 +89,11 @@ const LoginForm = () => {
           required: true,
         }}
       />
-      <div>
-      <Button/>
+      <div className="my-4">
+      <ButtonRegisterLogin/>
       </div>
-      <p className="mb-0 mt-4 text-center">
-        Sos nuevo?<Link to="/register"> Registraté acá</Link>
+      <p className="my-4 text-center">
+        Sos nuevo?<Link to="/register"> Ingresa </Link>
       </p>
     </form>
   );
