@@ -2,10 +2,10 @@ import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <>
+    <div className="contSection">
       <section>
         <div className="title mb-4">
-          <h1>About Us</h1>
+          <h2>About Us</h2>
         </div>
         <article className="infoCard mt-3">
           <h5>Welcome to LARANA: Where Elegance Meets Flavor</h5>
@@ -47,17 +47,55 @@ const AboutUs = () => {
         </article>
       </section>
       <section>
-          <div className="title mb-4">
-            <h1>Founders</h1>
+        <div className="title mb-4">
+          <h2>Founders</h2>
+        </div>
+        <article className="profileCard d-flex mb-3">
+          <img
+            src="https://c0.klipartz.com/pngpicture/980/886/gratis-png-avatar-de-retrato-masculino-icono-de-computadora-icono-avatar-de-diseno-icono-de-cara-plana-thumbnail.png"
+            alt=""
+          />
+          <div className="founderInfo">
+            <h6>Enzo Iñigo</h6>
+            <p>FullStack</p>
+            <p>Developer</p>
           </div>
-          <article className="profileCard">
-            <img src="" alt="" />
-            <div>
-              
-            </div>
-          </article>
+        </article>
+        <article className="profileCard d-flex mb-3">
+          <img
+            src="https://c0.klipartz.com/pngpicture/980/886/gratis-png-avatar-de-retrato-masculino-icono-de-computadora-icono-avatar-de-diseno-icono-de-cara-plana-thumbnail.png"
+            alt=""
+          />
+          <div className="founderInfo">
+            <h6>Alexis Gunsett</h6>
+            <p>FullStack</p>
+            <p>Developer</p>
+          </div>
+        </article>
+        <article className="profileCard d-flex mb-3">
+          <img
+            src="https://c0.klipartz.com/pngpicture/980/886/gratis-png-avatar-de-retrato-masculino-icono-de-computadora-icono-avatar-de-diseno-icono-de-cara-plana-thumbnail.png"
+            alt=""
+          />
+          <div className="founderInfo">
+            <h6>Fabri Canepa</h6>
+            <p>FullStack</p>
+            <p>Developer</p>
+          </div>
+        </article>
+        <article className="profileCard d-flex mb-3">
+          <img
+            src="https://c0.klipartz.com/pngpicture/980/886/gratis-png-avatar-de-retrato-masculino-icono-de-computadora-icono-avatar-de-diseno-icono-de-cara-plana-thumbnail.png"
+            alt=""
+          />
+          <div className="founderInfo">
+            <h6>Facu Vecino</h6>
+            <p>FullStack</p>
+            <p>Developer</p>
+          </div>
+        </article>
       </section>
-    </>
+    </div>
   );
 };
 export default AboutUs;
