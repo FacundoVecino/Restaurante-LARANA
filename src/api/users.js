@@ -19,15 +19,20 @@ export const postUserFn = async (data)=>{
 
 
 
-export const putUserFn = async (data) =>{
-    const res = await fetch(`${API_URL}/user/${data}`, {
-      method:'PUT',
-      body:JSON.stringify(data),
-      headers:{
-        'Content-Type': 'application/json',
-      },
-    });
-    if (!res.ok){
-      throw new Error("Ocurrio un error al guardar el USUARIO")
-    }
+export const putUserFn = async (data) => {
+  const apiUrl = `${API_URL}/user/${data.id}`;
+  console.log('URL de la solicitud:', apiUrl);
+
+  const res = await fetch(apiUrl, {
+    method: 'PUT',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  if (!res.ok) {
+    const errorMessage = await res.text();
+    throw new Error(`Error al guardar el USUARIO: ${res.status} - ${res.statusText}. Detalles: ${errorMessage}`);
   }
+}

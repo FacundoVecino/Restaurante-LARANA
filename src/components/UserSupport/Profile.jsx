@@ -4,7 +4,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import Swal from "sweetalert2";
 import { MdLogout } from "react-icons/md";
-import { postUserFn } from "../../api/users";
+import { postUserFn, putUserFn } from "../../api/users";
 
 
 const Profile = () => {
@@ -42,7 +42,7 @@ const Profile = () => {
 
   const handleSave = () => {
     // Guarda los cambios, podrías enviar una solicitud al servidor aquí 
-    postUserFn()
+putUserFn();
     setEditingField(null);
    
   };

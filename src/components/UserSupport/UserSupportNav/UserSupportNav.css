@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: "Nunito";
   src: url(../../../assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
-}
+} */
 
 .nav {
   font-family: "Nunito";
@@ -44,8 +44,9 @@
 }  */
 
  .buttonEditUser{
-  right: 20px;
   position: relative;
+  right: 20px;
+  bottom: 8px;
   background: none;
   border: none;
   padding: 0;
@@ -75,3 +76,8 @@ font-size: 24px
   transition: 400ms ease;
   background: #54000e;
 } 
+
+.perfil-data {
+ 
+  border-bottom: 1px solid #E8D191;
+}
