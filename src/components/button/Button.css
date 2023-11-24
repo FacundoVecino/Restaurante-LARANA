@@ -1,4 +1,4 @@
-button {
+.btnRegisterLogin {
     display: inline-block;
     overflow: hidden;
     position: relative;
@@ -11,12 +11,12 @@ button {
     color: #e8d191;
   }
   
-  button:hover {
+  .btnRegisterLogin:hover {
     transition: 400ms ease;
     background: #54000e;
   }
   
-  button .overlay {
+  .btnRegisterLogin .overlay {
     position: absolute;
     background: #fff;
     transform: translate(-50%, -50%) scale(0);

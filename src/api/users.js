@@ -1,3 +1,5 @@
+
+
 const API_URL = import.meta.env.VITE_API_URL
 
 export const postUserFn = async (data)=>{
@@ -14,3 +16,18 @@ export const postUserFn = async (data)=>{
     }
     return data;
 }
+
+
+
+export const putUserFn = async (data) =>{
+    const res = await fetch(`${API_URL}/user/${data}`, {
+      method:'PUT',
+      body:JSON.stringify(data),
+      headers:{
+        'Content-Type': 'application/json',
+      },
+    });
+    if (!res.ok){
+      throw new Error("Ocurrio un error al guardar el USUARIO")
+    }
+  }

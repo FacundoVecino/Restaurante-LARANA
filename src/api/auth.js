@@ -11,11 +11,11 @@ export const postLoginFn = async (formdata) => {
 
   const foundUser = users.find(
     (item) =>
-      item.email === formdata.email&& item.passwor === formdata.passwor
+      item.email === formdata.email&& item.password === formdata.password
   );
 
     if(!foundUser){
         throw new Error('Usuario o contraseña no válida')
     }
-  return {...foundUser, passwor: undefined}
+  return {...foundUser}
 };

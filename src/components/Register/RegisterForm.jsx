@@ -37,7 +37,7 @@ const RegisterForm = () => {
       toast.success("Bienvenido");
 
       // Loguear al usuario
-       login({...data, password: undefined})
+       login({...data})
 
       // Navegar a inicio pero estando logueado
       navigate("/");

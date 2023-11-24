@@ -9,20 +9,19 @@ import { useSession } from "../../stores/useSession";
 import { postLoginFn } from "../../api/auth";
 
 import Input from "../Input/Input";
-import './LoginForm.css'
+import "./LoginForm.css";
 import ButtonRegisterLogin from "../Register/ButtonRegisterLogin";
 
 const LoginForm = () => {
   //ZUSTAND----------------------------------------------------------------
 
-  const {login} = useSession();
+  const { login } = useSession();
 
   //RRD ----------------------------------------------------------------
 
   const navigate = useNavigate();
 
- //RHF  ----------------------------------------------------------------
-
+  //RHF  ----------------------------------------------------------------
 
   const {
     register,
@@ -31,34 +30,33 @@ const LoginForm = () => {
   } = useForm();
 
   // TQUERY----------------------------------------------------------------
-  const{mutate: postLogin} = useMutation({
+  const { mutate: postLogin } = useMutation({
     mutationFn: postLoginFn,
-    onSuccess: (data) =>{
-        //msj exito
-        Swal.close();
-        toast.success('Bienvenido')
-        
-        // Loguear al usuario
-            login(data)
+    onSuccess: (data) => {
+      //msj exito
+      Swal.close();
+      toast.success("Bienvenido");
 
-        // Navegar a inicio pero estando logueado 
-        navigate('/')
+      // Loguear al usuario
+      login(data);
+      
+      // Navegar a inicio pero estando logueado
+      navigate("/");
     },
-    onError: (err)=>{
-        Swal.close();
-        toast.error(err.message)
-    }
-})
+    onError: (err) => {
+      Swal.close();
+      toast.error(err.message);
+    },
+  });
 
-// HANDLERS---------------------------------------------------------------
-
+  // HANDLERS---------------------------------------------------------------
 
   const handleSubmit = (data) => {
     Swal.showLoading();
-    postLogin(data)
+    postLogin(data);
   };
 
-  // RENDER ----------------------------------------------------------- 
+  // RENDER -----------------------------------------------------------
 
   return (
     <form onSubmit={onSubmitRHF(handleSubmit)} className="text-center">
@@ -71,7 +69,7 @@ const LoginForm = () => {
         className="my-4"
         options={{
           minLength: 3,
-          maxaLength:25,
+          maxaLength: 25,
           required: true,
         }}
       />
@@ -85,12 +83,12 @@ const LoginForm = () => {
         error={!!errors?.password}
         options={{
           minLength: 8,
-          maxaLength:15,
+          maxaLength: 15,
           required: true,
         }}
       />
       <div className="my-4">
-      <ButtonRegisterLogin/>
+        <ButtonRegisterLogin />
       </div>
       <p className="my-4 text-center">
         Sos nuevo?<Link to="/register"> Ingresa </Link>

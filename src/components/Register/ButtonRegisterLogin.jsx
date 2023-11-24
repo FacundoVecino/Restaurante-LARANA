@@ -14,7 +14,7 @@ const ButtonRegisterLogin = () => {
 
   return (
     <div className="px-5">
-      <button type="submit" onClick={handleClick}>
+      <button className="btnRegisterLogin" type="submit" onClick={handleClick}>
       Regístrate
         {showOverlay && <span className="overlay" />}
       </button>
