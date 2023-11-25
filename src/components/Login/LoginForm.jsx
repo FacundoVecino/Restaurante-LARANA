@@ -59,7 +59,7 @@ const LoginForm = () => {
   // RENDER -----------------------------------------------------------
 
   return (
-    <form onSubmit={onSubmitRHF(handleSubmit)} className="text-center">
+    <form onSubmit={onSubmitRHF(handleSubmit)} className="text-center formsRegisterLogin">
       <Input
         label="Email"
         placeholder="Ingrese su email"

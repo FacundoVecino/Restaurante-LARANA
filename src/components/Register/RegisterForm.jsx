@@ -56,7 +56,7 @@ const RegisterForm = () => {
   // RENDER --------------------------------------------------------------
   return (
     <div>
-    <form onSubmit={onSubmitRHF(handleSubmit)} className="py-4">
+    <form onSubmit={onSubmitRHF(handleSubmit)} className="formsRegisterLogin py-4">
       <Input
         label="Nombre"
         name="firstname"

@@ -33,7 +33,7 @@ const {logout, isLoggedIn}= useSession()
       <h3 className="mt-4"> <MdOutlineEmail /> larana@gmail.com</h3>
       </div>
       <div className="mt-5 container text-center">
-      {isLoggedIn && (<button type="button" className="btnLogout mt-5" onClick={handleLogout}><MdLogout /> Sing off</button>
+      {isLoggedIn && (<button type="button" className="btnLogout mt-5" onClick={handleLogout}><MdLogout /> Sign off</button>
       )}
       </div>
       </section>
