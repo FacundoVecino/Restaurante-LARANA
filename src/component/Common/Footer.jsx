@@ -1,6 +1,7 @@
 import './Footer.css'; 
 import icono from '../assets/Logo.png'
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -12,26 +13,26 @@ const Footer = () => {
           </div>
           <div className='col-sm-12 col-md-4 my-3 text-center'>
             <div className='my-3'>
-              <a href="#">Home</a>
+              <Link to="">Home</Link>
             </div>
             <div className='my-3'>
-              <a href="#">About us</a>
+              <Link to="">About us</Link>
             </div>
             <div className='my-3'>
-              <a href="#">Contact us</a>
+              <Link to="">Contact us</Link>
             </div>
             <div className='my-3'>
-              <a href="#">Cookies policy</a>
+              <Link to="">Cookies policy</Link>
             </div>
             <div className='my-3'>
-              <a href="#">Privacy policy</a>
+              <Link to="">Privacy policy</Link>
             </div>
           </div>
           <div className='col-sm-12 col-md-4 text-center my-3'>
             <h3 className='my-3'>Follow in</h3>
-            <a href="https://www.instagram.com/" className='mx-3'><FaInstagram /></a>
-            <a href="https://www.facebook.com/"><FaFacebook /></a>
-            <a href="https://www.twitter.com/" className='mx-3'><FaTwitter /></a>
+            <Link href="https://www.instagram.com/" className='mx-3'><FaInstagram /></Link>
+            <Link href="https://www.facebook.com/"><FaFacebook /></Link>
+            <Link href="https://www.twitter.com/" className='mx-3'><FaTwitter /></Link>
           </div>
         </div>
         <div className='my-3'>

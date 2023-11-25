@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import { FaHome, FaShoppingCart, FaPlus, FaUser } from 'react-icons/fa';
 import './Navbar.css'; 
 
@@ -6,24 +8,31 @@ const Navbar = () => {
     <nav className="navbar">
       <ul>
         <li>
-          <a href="/">
+          <NavLink className={`nav-link ${({ isActive }) =>
+                    isActive ? "active" : ""}`}
+                  aria-current="page"
+                  to="/" >
             <FaHome />
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="/cart">
+          <NavLink to="/cart">
             <FaShoppingCart />
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="/add">
+          <NavLink className={`nav-link ${({ isActive }) =>
+                    isActive ? "active" : ""}`}
+                  to="/add">
           <FaPlus />
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="/user">
+          <NavLink   className={`nav-link ${({ isActive }) =>
+                    isActive ? "active" : ""}`}
+                  to="/user">
             <FaUser />
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
