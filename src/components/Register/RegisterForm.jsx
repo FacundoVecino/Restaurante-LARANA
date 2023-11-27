@@ -44,7 +44,7 @@ const RegisterForm = () => {
     },
     onError: () => {
       Swal.close();
-      toast.success("Ocurrio un error al registrar un usuario");
+      toast.error("Ocurrio un error al registrar un usuario",);
     },
   });
 

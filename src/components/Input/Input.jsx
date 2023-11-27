@@ -9,7 +9,7 @@ const Input = (props) => {
     register,
     className = "",
     error = false,
-
+    readOnly = false,
   } = props;
   return (
     <fieldset className={`container px-5 ${className}`}>
@@ -18,10 +18,12 @@ const Input = (props) => {
         id={`${name}-input`}
         className={`form-control ${error ? "is-invalid" : ''} `}
         placeholder=""
-        {...register(name, options)}
+        {...register(name, {...options, readOnly})}
+        readOnly={readOnly}
       />
       <label htmlFor={`${name}-input`}>{label}</label>
     </fieldset>
   );
 };
 export default Input;
+

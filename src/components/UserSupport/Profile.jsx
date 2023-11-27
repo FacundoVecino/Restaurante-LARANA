@@ -1,5 +1,5 @@
-// import { TiEdit } from "react-icons/ti";
-import { useSession } from "../../stores/useSession";
+import { TiEdit } from "react-icons/ti";
+import { useSession, useUser } from "../../stores/useSession";
 
 import { toast } from "sonner";
 import Swal from "sweetalert2";
@@ -8,18 +8,24 @@ import { putUserFn } from "../../api/users";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import Input from "../Input/Input";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
 
 const Profile = () => {
+  //-----------------------Zustand----------------------------------------------
   const { user, isLoggedIn, logout } = useSession();
-  // REACT HUK FROM------------------------------------------
+  const { clearUser } = useUser();
+
+  //-----------------------RHF----------------------------------------------
   const {
     register,
     handleSubmit: onSubmitRHF,
     formState: { errors },
     setValue,
-    reset,
+    //reset,
   } = useForm();
+
+  const [editingFields, setEditingFields] = useState({});
 
   useEffect(() => {
     if (user) {
@@ -27,12 +33,12 @@ const Profile = () => {
       setValue("lastname", user.lastname);
       setValue("username", user.username);
       setValue("email", user.email);
-      setValue("password", user.password);
     }
   }, [user, setValue]);
 
-  // const isEditing = !!user;
 
+
+  //-----------------------TQUERY----------------------------------------------
   const queryClient = useQueryClient();
 
   const { mutate: putUser } = useMutation({
@@ -40,33 +46,46 @@ const Profile = () => {
     onSuccess: () => {
       // mensaje de exito
       Swal.close();
-      toast.success("usuario actualizado correctamente");
-
-      // reseter el formulario
-      reset();
-
+      toast.success("Usuario actualizado");
       //limpiar estado global
-      // clearUser()
-
+      clearUser();
       //indicar que la tabla se tiene que recargar
       queryClient.invalidateQueries("users");
+      setEditingFields({});
     },
     onError: () => {
       Swal.close();
       toast.error("Ocurrió un error al guardar el usuario");
     },
   });
+  //-----------------------HANDLERS----------------------------------------------
 
-  const handleSubmit = (data) => {
-    Swal.showLoading();
-    console.log(data);
-    
-      putUser({ ...data, id: user.id });
-    
-    console.log(data);
-    return;
+  //edición
+  const handleEditField = (fieldName) => {
+    setEditingFields((prevFields) => ({
+      ...prevFields,
+      [fieldName]: !prevFields[fieldName],
+    }));
   };
 
+  // Submit
+  const handleSubmit = (data) => {
+    Swal.showLoading();
+    const newData = {
+      firstname: data.firstname,
+      lastname: data.lastname,
+      username: data.username,
+      email: data.email,
+      password: user.password,
+      isAdmin: user.isAdmin,
+      id: user.id,
+    };
+
+    putUser(newData);
+
+    return;
+  };
+  //Logout
   const handleLogout = () => {
     Swal.fire({
       title: "Atención",
@@ -95,10 +114,18 @@ const Profile = () => {
               className="my-2"
               options={{
                 minLength: 3,
-                maxaLength: 25,
+                maxLength: 25,
                 required: true,
               }}
+              readOnly={!editingFields.firstname}
             />
+            <button
+              type="button"
+              className="buttonEditUser"
+              onClick={() => handleEditField("firstname")}
+            >
+              <TiEdit />
+            </button>
           </div>
           <div className="d-flex">
             <Input
@@ -108,10 +135,18 @@ const Profile = () => {
               className="my-2"
               options={{
                 minLength: 3,
-                maxaLength: 25,
+                maxLength: 25,
                 required: true,
               }}
+              readOnly={!editingFields.lastname}
             />
+            <button
+              type="button"
+              className="buttonEditUser"
+              onClick={() => handleEditField("lastname")}
+            >
+              <TiEdit />
+            </button>
           </div>
           <div className="d-flex">
             <Input
@@ -121,10 +156,18 @@ const Profile = () => {
               className="my-2"
               options={{
                 minLength: 3,
-                maxaLength: 25,
+                maxLength: 25,
                 required: true,
               }}
+              readOnly={!editingFields.username}
             />
+            <button
+              type="button"
+              className="buttonEditUser"
+              onClick={() => handleEditField("username")}
+            >
+              <TiEdit />
+            </button>
           </div>
           <div className="d-flex">
             <Input
@@ -135,13 +178,21 @@ const Profile = () => {
               className="my-2"
               options={{
                 minLength: 3,
-                maxaLength: 25,
+                maxLength: 25,
                 required: true,
               }}
+              readOnly={!editingFields.email}
             />
+            <button
+              type="button"
+              className="buttonEditUser"
+              onClick={() => handleEditField("email")}
+            >
+              <TiEdit />
+            </button>
           </div>
           <div className="mt-3">
-            <button type="submit">Guardar</button>
+            <button type="submit" className="buttonSave">Save</button>
           </div>
         </form>
         {isLoggedIn && (
