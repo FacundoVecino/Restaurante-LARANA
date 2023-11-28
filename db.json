@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "firstname": "Maaaa",
+      "lastname": "Guns",
+      "username": "Mau",
+      "email": "mau_gunsett@hotmail.com",
+      "id": 1
+    },
+    {
+      "firstname": "nel",
+      "lastname": "Gunsettff",
+      "username": "maudd",
+      "email": "mau_gunsett@hotmail.comdd",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 2
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Gunsett",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 3
+    }
+  ]
+}
