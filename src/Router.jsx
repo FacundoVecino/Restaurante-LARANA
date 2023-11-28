@@ -5,11 +5,15 @@ import { useSession } from "./stores/useSession";
 import Profile from "./components/UserSupport/Profile";
 import UserView from "./views/UserView";
 import Support from "./components/UserSupport/Support";
+import Navbar from "./components/Common/Navbar";
+import Footer from "./components/Common/Footer";
+import Error404 from "./views/Error404"
 
 const Router = () => {
   const { isLoggedIn } = useSession();
   return (
     <BrowserRouter>
+     <Navbar/>
       <main>
         <Routes>
           <Route
@@ -33,9 +37,12 @@ const Router = () => {
             {/* Rutas secundarias bajo /user */}
             <Route index element={<Profile/>} />
             <Route path="support" element={<Support/>} />
+          <Route path="*" element={<Error404/>}/>
           </Route>
         </Routes>
       </main>
+      <Footer />
+
     </BrowserRouter>
   );
 };
