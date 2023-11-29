@@ -87,7 +87,7 @@ const AdminForm = (props) => {
       <ToggleSwitch
         register={register}
         options={{
-          required: true,
+          required: false,
         }}
         className='my-4'
         name='available'

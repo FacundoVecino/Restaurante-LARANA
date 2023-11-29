@@ -1,0 +1,194 @@
+.table-widget {
+  font-family: 'Nunito';
+  width: 100%;
+  border-radius: 16px;
+  background-color: #160404 !important;
+  padding: 24px;
+}
+
+.table-widget table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-widget caption {
+  font-size: 1.12rem;
+  font-weight: 700;
+  align-items: center;
+  margin: 8px 0px;
+}
+
+.table-widget th {
+  border-radius: 16px;
+  background-color: #160404;
+  text-align: center;
+  padding: 20px 16px;
+  font-size: 1.2rem;
+  color: #E8D191 !important;
+  border-bottom: 1px solid #E8D191;
+}
+
+.table-widget tfoot {
+  margin-top: 16px;
+}
+
+.table-widget td {
+  text-align: center;
+  padding: 16px 34px;
+}
+
+.table-widget tbody tr {
+  flex-wrap: nowrap;
+  border-top: 1px solid #E8D191;
+  cursor: pointer;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.table-widget tbody tr:hover {
+  transition: 400ms ease;
+  border-left: 1px solid #E8D191;
+  border-right: 1px solid #E8D191;
+  background-color: #4D000D !important;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.product-profile {
+  justify-content: center;
+  display: flex;
+  gap: 16px;
+}
+
+.profile-info {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-info__name {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.product-profile img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #E8D191;
+}
+
+.status {
+  display: inline-flex;
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: 700;
+}
+
+.status--available {
+  flex-wrap: nowrap;
+  background-color: #139a4b;
+  color: #EAFEF3;
+}
+
+.status--not-available {
+  flex-wrap: nowrap;
+  background-color: #950019;
+  color: #fff6e5;
+}
+
+.pagination {
+  position: relative;
+  width: 200px;
+  height: 40px;
+}
+
+.pagination ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  font-size: 0;
+  white-space: nowrap;
+  transition: transform 0.5s ease-in-out;
+}
+
+.pagination li,
+.pagination button {
+  width: 100%;
+  height: 100%;
+  font-weight: 800;
+  color: #fff;
+}
+
+.pagination li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.pagination button {
+  display: block;
+  font-size: 14px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.pagination .pages,
+.pagination .center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.pagination .pages {
+  z-index: 1;
+  width: 100%;
+  height: 90%;
+}
+
+.pagination .pages li {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.pagination .pages li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination .pages li:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.pagination .center {
+  z-index: 2;
+  left: 40%;
+  width: 20%;
+  height: 100%;
+  background-color: #426383;
+}
+
+#btn-edit {
+  background: none;
+  font-size: 20px;
+}

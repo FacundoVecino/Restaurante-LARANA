@@ -1,35 +1,8 @@
-import "./CardModal.css";
+import './ModalMenu.css'
 
-const NewModal = () => {
+const ModalMenu = () => {
   return (
-    <div className="componentContainer">
-      <article
-        className="menuCard gap-2 ms-2 me-2 mb-5"
-        data-bs-toggle="modal"
-        data-bs-target="#modalCard"
-      >
-        <div className="menuText ms-4">
-          <h5 className="mb-1 foodTitle">Plato</h5>
-          <p className="foodInfo">
-            Lorem ipsum, dolor dasplaceat rerum atque placeat rerum atque
-            placeat rerum atque placeat rerum atquedsa ds dsa sda dsa asd sadsit
-            amet consectetur adipisicing elit. Commodi laborum esse quasi
-            placeat rerum atque, placeat rerum atqueplaceat rerum atqueplaceat
-            rerum atqueplaceat rerum atqueplaceat rerum atqueplaceat rerum atque
-            neque ut facilis rem ipsa sunt fugit mollitia, ducimus quibusdam
-            enim debitis consectetur optio illum.
-          </p>
-          <p className="foodPrice">Precio</p>
-        </div>
-        <div className="menuImage">
-          <img
-            src="https://www.laitalianapastas.com/wp-content/uploads/2021/07/empanadas-mondongo.jpg"
-            alt="Plato"
-          />
-        </div>
-      </article>
-
-      <div
+    <article
         className="modal fade"
         id="modalCard"
         data-bs-backdrop="static"
@@ -73,8 +46,8 @@ const NewModal = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  );
-};
-export default NewModal;
+      </article>
+  )
+}
+
+export default ModalMenu
