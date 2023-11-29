@@ -6,18 +6,31 @@
 @media (max-width: 767px) {
   section {
     width: 100%;
+    position: relative;
   }
 
   /* Info Cards */
-  .title {
+  .title  {
     color: #e8d191;
     text-align: center;
-    font-family: TAN - PEARL;
+    font-family: "TAN - PEARL";
     font-size: 23px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    border-bottom: 1px solid #e8d191;
+    padding-bottom: 2px;
+    position: relative;
+  }
+
+  .title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    border-bottom: 2px solid #e8d191;
+    transform: translateX(-50%);
   }
 
   .infoCard {
@@ -26,13 +39,14 @@
     height: 304px;
     border-radius: 40px;
     margin: 0 auto;
+    padding-top: 6px;
   }
 
   .infoCard h5 {
     text-align: center;
     color: #e8d191;
-    font-family: TAN - PEARL;
-    font-size: 20px;
+    font-family: "TAN - PEARL";
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -43,18 +57,18 @@
 
   .infoCard p {
     padding: 16px 20px;
-    line-height: normal;
+    line-height: 1.7;
     color: #e8d191;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-    font-family: TAN - PEARL;
+    font-family: "TAN - PEARL";
   }
 
   /* Profile Cards */
 
   .profileCard {
     background-color: #160404;
-    width: 316px;
+    width: 90%;
     height: 125px;
     border-radius: 40px;
     margin: 0 auto;
@@ -74,8 +88,8 @@
   .profileCard h6 {
     color: #e8d191;
     text-align: center;
-    font-family: TAN - PEARL;
-    font-size: 23px;
+    font-family: "TAN - PEARL";
+    font-size: 21px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -84,12 +98,13 @@
 
   .profileCard p {
     color: #e8d191;
-    font-family: TAN - PEARL;
-    font-size: 16px;
+    font-family: "TAN - PEARL";
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: center;
     margin: 0;
+    margin-top: 12px;
   }
 }

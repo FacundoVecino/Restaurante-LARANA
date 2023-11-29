@@ -1,12 +1,12 @@
-import AboutUs from "../ComeWeb/AboutUs/AboutUs.jsx";
-// import ContactUs from "../ComeWeb/ContactUs/ContactUs.jsx";
+import ComeWeb from "../ComeWeb/ComeWeb";
+
+import Contact from "../Contact/Contact"
 
 const ComeWebView = () => {
   return (
     <>
-    <h1>ComeWeb</h1>
-      <AboutUs />
-      {/* <ContactUs /> */}
+      <ComeWeb />
+      <Contact />
     </>
   );
 };

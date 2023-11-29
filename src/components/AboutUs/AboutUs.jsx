@@ -46,7 +46,7 @@ const AboutUs = () => {
           </p>
         </article>
       </section>
-      <section>
+      <section className="mt-4">
         <div className="title mb-4">
           <h2>Founders</h2>
         </div>
