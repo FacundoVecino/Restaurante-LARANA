@@ -3,7 +3,7 @@ import "./Button.css";
 const Button = () => {
 
   return (
-    <div className="px-5">
+    <div className="button px-5">
       <button type="submit">
         Create
       </button>

@@ -1,4 +1,4 @@
-import './ModalMenu.css'
+import './ModalCrud.css'
 
 const ModalMenu = () => {
   return (
