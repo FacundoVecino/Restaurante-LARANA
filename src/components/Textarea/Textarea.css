@@ -1,0 +1,33 @@
+fieldset{
+  font-family: 'Nonito';
+  font-size: 18px;
+  position: relative;
+}
+
+textarea {
+  position: relative;
+  width: 100%;
+  padding: 1em !important;
+  border: none !important;
+  background-color: transparent !important;
+  outline: none;
+  color: #E8D191 !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #E8D191 !important;
+}
+
+.textarea-label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  padding-left: 3rem;
+  transition: 300ms ease;
+}
+
+fieldset textarea:focus + .textarea-label,
+fieldset textarea:not(:placeholder-shown) + .textarea-label {
+  top: 0;
+}

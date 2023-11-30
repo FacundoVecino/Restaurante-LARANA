@@ -1,0 +1,5 @@
+.products-table {
+  height: 600px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
