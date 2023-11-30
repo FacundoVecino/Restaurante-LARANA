@@ -1,9 +1,9 @@
-.sec-main {
+.menuSec {
   background-color: #4d000d;
   min-height: 100vh;
 }
 
-.sec-main h1 {
+.menuSec h1 {
   color: #e8d191;
 }
 
@@ -108,7 +108,6 @@
   border: none;
 }
 
-
 /* SEPARANDO */
 @media screen and (max-width: 767px) {
   /* CARD-MENU */
@@ -158,7 +157,6 @@
     background-color: #ca0c2b;
   }
 
-
   .scrollText {
     max-height: 130px;
     overflow: auto;
@@ -207,15 +205,15 @@
   }
 
   .foodInfo {
-  max-height: 50px;
-  max-width: 80%;
-  overflow: hidden;
+    max-height: 50px;
+    max-width: 80%;
+    overflow: hidden;
   }
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .componentContainer {
     flex-wrap: wrap;
     width: 43%;
   }
- }
+}
