@@ -20,8 +20,23 @@ h1 {
 }
 
 
-.logoRegister {
-  width: 200px;
+.logo {
+  width: 150px;
+}
+
+
+.formsLogin {
+  border-radius: 40px !important;
+  background: #160404f2 !important;
+  width: 500px;
+  margin-top: 100px;
+
+}
+
+.eyePasword{
+  position: absolute;
+  right: 480px;
+  bottom: 117px;
 }
 
 
@@ -35,45 +50,40 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .formsRegister {
-   width: 400px ;
+   width: 350px ;
   }
-  .logoRegister {
-    width: 250px;
-  }
+  .eyePasword {
+    position: absolute;
+    top: 465px;
+    right: 185px;
+    
+   }
 
 }
 
 @media screen and (max-width: 518px) {
   .formsRegister {
-    width: 400px;
+    width: 350px;
     
   }
 
-  .logoRegister {
-    width: 200px;
-  }
 }
 
 @media screen and (max-width: 440px) {
    .formsRegister {
-    width: 300px;
+    width: 350px;
     
   }
 
-  .logoRegister {
-    width: 200px;
-  }
 }
 
 @media screen and (max-width: 332px) {
   .formsRegister {
-   width: 250px;
+   width: 230px;
    
  }
 
- .logoRegister {
-   width: 200px;
- }
+ 
 }
 
  @media screen and (max-width: 280px) {
@@ -82,7 +92,20 @@ h1 {
    
  }
 
- .logoRegister {
-   width: 150px;
- }
 } 
+
+
+@media screen and (max-width: 440px) {
+  .formsLogin {
+   width: 400px;
+   padding: 20px;
+   
+ }
+
+ .eyePasword {
+  position: absolute;
+  top: 465px;
+  right: 80px;
+  
+ }
+}

@@ -5,6 +5,7 @@ import { useSession } from "./stores/useSession";
 import Profile from "./components/UserSupport/Profile";
 import UserView from "./views/UserView";
 import Support from "./components/UserSupport/Support";
+import AccessPanelView from "./views/AccessPanelView";
 
 const Router = () => {
   const { isLoggedIn } = useSession();
@@ -12,26 +13,16 @@ const Router = () => {
     <BrowserRouter>
       <main>
         <Routes>
-          <Route
-            path="/login"
-            element={isLoggedIn ? <Navigate to="/user" /> : <LoginView />}
-          />
-          <Route
-            path="/register"
-            element={isLoggedIn ? <Navigate to="/" /> : <RegisterView />}
-          />
+          <Route path="/access" element={<AccessPanelView />}>
+            <Route index element={<LoginView />} />
+            <Route path="register" element={<RegisterView />} />
+          </Route>
           <Route
             path="/user"
-            element={
-              isLoggedIn ? (
-                <UserView />
-              ) : (
-                <Navigate to="/login" />
-              )
-            }
+            element={isLoggedIn ? <UserView /> : <Navigate to="/login" />}
           >
-            <Route index element={<Profile/>} />
-            <Route path="support" element={<Support/>} />
+            <Route index element={<Profile />} />
+            <Route path="support" element={<Support />} />
           </Route>
         </Routes>
       </main>
@@ -40,4 +31,3 @@ const Router = () => {
 };
 
 export default Router;
-

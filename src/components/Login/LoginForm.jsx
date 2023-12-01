@@ -59,8 +59,8 @@ const[showPwd, setShowPwd]= useState(false)
   // RENDER -----------------------------------------------------------
 
   return (
-    <form onSubmit={onSubmitRHF(handleSubmit)} className="text-center formsLogin">
-     <h1>Welcome to LARANA</h1>
+    <form onSubmit={onSubmitRHF(handleSubmit)} className="text-center formsLogin py-4">
+     <h4>Welcome to LARANA</h4>
       <Input
         label="Email"
         placeholder="Ingrese su email"
