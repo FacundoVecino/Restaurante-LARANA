@@ -17,13 +17,58 @@
       "id": 2
     },
     {
-      "firstname": "Mauricio",
+      "firstname": "Loana",
       "lastname": "Gunsett",
       "username": "mau_gunsett@hotmail.com",
       "email": "mau_gunsett@hotmail.com",
       "password": "aA1*bbbb",
       "isAdmin": false,
       "id": 3
+    },
+    {
+      "firstname": "Nadie",
+      "lastname": "Nadie",
+      "username": "Nadie",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 4
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Gunsett",
+      "username": "Nadie",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 5
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Nadie",
+      "username": "Mauricio",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 6
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Gunsett",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "mauricioloana@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 7
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Gunsett",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 8
     }
   ]
 }

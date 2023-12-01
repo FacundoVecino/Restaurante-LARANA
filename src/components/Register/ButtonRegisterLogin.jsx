@@ -1,7 +1,10 @@
 import { useState } from "react";
 import "../button/Button.css";
 
-const ButtonRegisterLogin = () => {
+const ButtonRegisterLogin = (props) => {
+
+  const {text} = props;
+
   const [showOverlay, setShowOverlay] = useState(false);
 
   const handleClick = () => {
@@ -15,7 +18,7 @@ const ButtonRegisterLogin = () => {
   return (
     <div className="px-5">
       <button className="btnRegisterLogin" type="submit" onClick={handleClick}>
-      Regístrate
+      {text}
         {showOverlay && <span className="overlay" />}
       </button>
     </div>

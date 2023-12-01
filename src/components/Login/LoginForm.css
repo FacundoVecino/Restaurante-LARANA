@@ -1,34 +1,88 @@
-.formsRegisterLogin {
-  border-radius: 40px !important;
-  background: #160404f2 !important;
-  padding: 1rem;
-  box-sizing: border-box;
+.imgRegister {
+  background: url(../../assets/Copas.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+
 }
 
 
+
+.formsRegister{
+  border-radius: 40px !important;
+  background: #160404f2 !important;
+  width: 500px;
+  margin-top: 40px ;
+}
 h1 {
   color: #e8d191 !important;
 }
 
-.imgRegister {
-  background: url(../../assets/Copas.png);
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  
-}
-.logo {
-width: 10%;
+
+.logoRegister {
+  width: 200px;
 }
 
-@media (width < 768px) {
-  .imgRegister {
-    height: 100vh;
-    background-size: auto;
-  background-position: center;
-    
+
+@media screen and (max-width: 992px) {
+  
+  .logoRegister {
+    width: 250px;
   }
 }
-.login-img{
-  border-radius: 40px;
+
+
+@media screen and (max-width: 768px) {
+  .formsRegister {
+   width: 400px ;
+  }
+  .logoRegister {
+    width: 250px;
+  }
+
 }
+
+@media screen and (max-width: 518px) {
+  .formsRegister {
+    width: 400px;
+    
+  }
+
+  .logoRegister {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+   .formsRegister {
+    width: 300px;
+    
+  }
+
+  .logoRegister {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  .formsRegister {
+   width: 250px;
+   
+ }
+
+ .logoRegister {
+   width: 200px;
+ }
+}
+
+ @media screen and (max-width: 280px) {
+  .formsRegister {
+   width: 250px;
+   
+ }
+
+ .logoRegister {
+   width: 150px;
+ }
+} 

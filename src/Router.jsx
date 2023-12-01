@@ -26,11 +26,10 @@ const Router = () => {
               isLoggedIn ? (
                 <UserView />
               ) : (
-                <Navigate to="/" />
+                <Navigate to="/login" />
               )
             }
           >
-            {/* Rutas secundarias bajo /user */}
             <Route index element={<Profile/>} />
             <Route path="support" element={<Support/>} />
           </Route>
@@ -41,3 +40,4 @@ const Router = () => {
 };
 
 export default Router;
+

@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Swal from "sweetalert2";
 import { toast } from "sonner";
@@ -47,6 +47,7 @@ const RegisterForm = () => {
       toast.error("Ocurrio un error al registrar un usuario",);
     },
   });
+  
 
   // HANDLERS---------------------------------------------------------------
   const handleSubmit = (data) => {
@@ -56,7 +57,8 @@ const RegisterForm = () => {
   // RENDER --------------------------------------------------------------
   return (
     <div>
-    <form onSubmit={onSubmitRHF(handleSubmit)} className="formsRegisterLogin py-4">
+    <form onSubmit={onSubmitRHF(handleSubmit)} className="formsRegister p-4">
+    <h4>Welcome to LARANA</h4>
       <Input
         label="Nombre"
         name="firstname"
@@ -65,12 +67,10 @@ const RegisterForm = () => {
         className="my-2"
         options={{
           minLength: 3,
-          maxaLength: 25,
+          maxLength: 25,
           required: true,
         }}
         />
-        
-
       <Input
         label="Apellido"
         name="lastname"
@@ -79,7 +79,7 @@ const RegisterForm = () => {
         className="my-2"
         options={{
           minLength: 3,
-          maxaLength: 25,
+          maxLength: 25,
           required: true,
         }}
       />
@@ -92,37 +92,41 @@ const RegisterForm = () => {
         className="my-2"
         options={{
           minLength: 3,
-          maxaLength: 25,
+          maxLength: 25,
           required: true,
         }}
       />
       <Input
         label="Email"
+        type="email"
         name="email"
         register={register}
         error={!!errors?.email}
         className="my-2"
         options={{
           minLength: 3,
-          maxaLength: 25,
+          maxLength: 25,
           required: true,
         }}
       />
       <Input
         label="Contraseña"
-        type="password"
+         type="password"
         name="password"
         register={register}
         error={!!errors?.password}
-        className="mb-4"
+        className="mb-3"
         options={{
           minLength: 8,
-          maxaLength: 15,
+          maxLength: 15,
           pattern: /^(?=.*[a-z])(?=.*[A-Z]).{8,15}$/,
           required: true,
         }}
       />
-      <ButtonRegisterLogin/>
+      <ButtonRegisterLogin text="Sing Up"/>
+      <p className="my-2 text-center">
+      Do you already have an accountt?<Link to="/register"> Log in </Link>
+      </p>
     </form>
     </div>
   );
