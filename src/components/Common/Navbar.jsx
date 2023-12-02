@@ -23,13 +23,13 @@ const Navbar = ({allProducts, setAllProducts, total, countProducts, setCountProd
 
   return (
     <nav className="navbar">
-      <ul>
-        <li>
+      <ul className="list-unstyled d-flex w-100 justify-content-around">
+        <li className='flex-fill text-center'>
           <NavLink className={`nav-link`} aria-current="page" to="/login">
             <FaHome />
           </NavLink>
         </li>
-        <li>
+        <li className='flex-fill text-center'>
           <NavLink to="/cart">
           <div className='container-icon'>
         <div
@@ -92,12 +92,12 @@ const Navbar = ({allProducts, setAllProducts, total, countProducts, setCountProd
       </div>
           </NavLink>
         </li>
-        <li>
+        <li className='flex-fill text-center'>
           <NavLink className={`nav-link`} to="/add">
             <FaPlus />
           </NavLink>
         </li>
-        <li>
+        <li className='flex-fill text-center'>
           <NavLink className={`nav-link`} to="/user">
             <FaUser />
           </NavLink>
