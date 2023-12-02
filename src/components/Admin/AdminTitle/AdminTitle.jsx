@@ -1,6 +1,6 @@
-import logoLarana from '../../../assets/images/logoLarana.png';
+import logoLarana from "../../../assets/images/logoLarana.png";
 
-import './AdminTitle.css';
+import "./AdminTitle.css";
 
 const AdminTitle = () => {
   return (

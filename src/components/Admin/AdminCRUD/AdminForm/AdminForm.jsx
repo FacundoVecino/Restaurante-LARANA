@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { generateId } from "../../../../helpers/helpers.js";
 import { toast } from "sonner";
+import Swal from "sweetalert2";
 
 import Input from "../../../Input/Input.jsx";
 import Textarea from "../../../Textarea/Textarea.jsx";
@@ -8,26 +9,38 @@ import Button from "../../../Button/Button.jsx";
 import ToggleSwitch from "../../../ToggleSwitch/ToggleSwitch.jsx";
 
 import "./AdminForm.css";
+import { useMutation } from "@tanstack/react-query";
+import { postProductsFn } from "../../../../api/products.js";
 
-const AdminForm = (props) => {
-  const { setProducts } = props
-
+const AdminForm = () => {
   const {
     register,
     handleSubmit: onSubmitRHF,
     formState: { errors },
-    reset
+    reset,
   } = useForm();
+
+  const { mutate: postProducts } = useMutation({
+    mutationFn: postProductsFn,
+    onSuccess: () => {
+      Swal.close();
+      toast.success("Producto guardado correctamente");
+
+      reset();
+    },
+    onError: () => {
+      Swal.close();
+      toast.error("Hubo un error al guardar el producto");
+    },
+  });
 
   const handleSubmit = (data) => {
     console.log(data);
 
-    const newProduct = { ...data, id: generateId() };
-    setProducts(newProduct);
+    Swal.showLoading();
 
-    toast.success('Producto guardado correctamente');
-    
-    reset()
+    const newProduct = { ...data, id: generateId() };
+    postProducts(newProduct);
   };
 
   return (
@@ -88,8 +101,8 @@ const AdminForm = (props) => {
         options={{
           required: false,
         }}
-        className='my-4'
-        name='available'
+        className="my-4"
+        name="available"
         error={!!errors.available}
       />
       <Button />

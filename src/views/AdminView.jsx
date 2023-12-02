@@ -1,6 +1,6 @@
-import { Outlet } from 'react-router-dom'
-import AdminNav from '../components/Admin/AdminNav/AdminNav.jsx'
-import AdminTitle from '../components/Admin/AdminTitle/AdminTitle.jsx'
+import { Outlet } from "react-router-dom";
+import AdminNav from "../components/Admin/AdminNav/AdminNav.jsx";
+import AdminTitle from "../components/Admin/AdminTitle/AdminTitle.jsx";
 
 const AdminView = () => {
   return (
@@ -9,7 +9,7 @@ const AdminView = () => {
       <AdminNav />
       <Outlet />
     </>
-  )
-}
+  );
+};
 
-export default AdminView
+export default AdminView;

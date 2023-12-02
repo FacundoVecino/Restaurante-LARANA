@@ -2,7 +2,7 @@ import CardCrud from "../../../CardCrud/CardCrud/CardCrud.jsx";
 import "./AdminTable.css";
 
 const AdminTable = (props) => {
-  const { products, openModal } = props;
+  const { products = [], openModal } = props;
 
   return (
     <div className="products-table">

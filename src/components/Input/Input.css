@@ -1,31 +1,31 @@
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   src: url(../../assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
 
 fieldset {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 18px;
   position: relative;
 }
 
-.form-control {
+input {
   position: relative;
   width: 100%;
-  padding: .7em !important;
+  padding: 0.7em !important;
   border: none !important;
   background-color: transparent !important;
   outline: none;
-  color: #E8D191 !important;
+  color: #e8d191 !important;
   border-radius: 0 !important;
-  border-bottom: 1px solid #E8D191 !important;
+  border-bottom: 1px solid #e8d191 !important;
 }
 
 .form-control:focus {
   box-shadow: none !important;
 }
 
-.input-label {
+label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -36,7 +36,7 @@ fieldset {
   transition: 300ms ease;
 }
 
-fieldset .form-control:focus + .input-label,
-fieldset .form-control:not(:placeholder-shown) + .input-label {
+fieldset input:focus + label,
+fieldset input:not(:placeholder-shown) + label {
   top: 0;
 }

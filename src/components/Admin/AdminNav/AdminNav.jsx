@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-import './AdminNav.css';
+import "./AdminNav.css";
 
 const AdminNav = () => {
   const location = useLocation();
@@ -11,7 +11,9 @@ const AdminNav = () => {
         <li className="nav-item">
           <Link
             to="/admin/"
-            className={`nav-link ${location.pathname === "/admin/" ? 'active' : ''}`}
+            className={`nav-link ${
+              location.pathname === "/admin/" ? "active" : ""
+            }`}
           >
             Products
           </Link>
@@ -19,7 +21,9 @@ const AdminNav = () => {
         <li className="nav-item">
           <Link
             to="/admin/users"
-            className={`nav-link ${location.pathname === "/admin/users" ? 'active' : ''}`}
+            className={`nav-link ${
+              location.pathname === "/admin/users" ? "active" : ""
+            }`}
           >
             Users
           </Link>
@@ -27,7 +31,9 @@ const AdminNav = () => {
         <li className="nav-item">
           <Link
             to="/admin/crud"
-            className={`nav-link ${location.pathname === "/admin/crud" ? 'active' : ''}`}
+            className={`nav-link ${
+              location.pathname === "/admin/crud" ? "active" : ""
+            }`}
           >
             CRUD
           </Link>

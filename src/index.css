@@ -15,9 +15,9 @@
 }
 
 body {
-  font-family: 'TAN-PEARL-Regular';
-  color: #E8D191;
-  background-color: #4D000D;
+  font-family: "TAN-PEARL-Regular";
+  color: #e8d191;
+  background-color: #4d000d;
 }
 
 #root {
@@ -33,6 +33,18 @@ main {
 }
 
 footer {
-  background: #2E0008;
+  background: #2e0008;
   flex-shrink: 0;
+}
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #160404;
+  border-top: 1px solid #f3f3f3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
 }
