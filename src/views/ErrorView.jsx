@@ -1,7 +1,5 @@
 const ErrorView = () => {
-  return (
-    <div>ErrorView</div>
-  )
-}
+  return <div>ErrorView</div>;
+};
 
-export default ErrorView
+export default ErrorView;

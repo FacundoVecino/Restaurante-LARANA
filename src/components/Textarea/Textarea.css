@@ -1,5 +1,5 @@
-fieldset{
-  font-family: 'Nonito';
+fieldset {
+  font-family: "Nonito";
   font-size: 18px;
   position: relative;
 }
@@ -11,9 +11,9 @@ textarea {
   border: none !important;
   background-color: transparent !important;
   outline: none;
-  color: #E8D191 !important;
+  color: #e8d191 !important;
   border-radius: 0 !important;
-  border-bottom: 1px solid #E8D191 !important;
+  border-bottom: 1px solid #e8d191 !important;
 }
 
 .textarea-label {

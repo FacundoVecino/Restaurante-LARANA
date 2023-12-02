@@ -78,7 +78,7 @@
 }
 
 .card-body {
-  background-color: #2E0008;
+  background-color: #2e0008;
   border: none;
   filter: brightness(1.1) !important;
 }
@@ -119,21 +119,19 @@
 }
 
 .scrollText::-webkit-scrollbar {
-  width: 4px; 
+  width: 4px;
 }
 
 .scrollText::-webkit-scrollbar-thumb {
   background-color: #ccc;
-  border-radius: 3px; 
+  border-radius: 3px;
 }
 
 .scrollText::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-
 @media screen and (max-width: 767px) {
-  
   /* CARD-MENU */
   .menuCard {
     background-color: #160404;
@@ -186,7 +184,6 @@
     object-fit: cover;
   }
 
-
   /* MODAL-MENU */
   .btn-close {
     background-color: #ca0c2b;
@@ -216,8 +213,6 @@
     width: 100%;
   }
 }
-
-
 
 @media (min-width: 768px) {
   .menuText h5,
@@ -253,7 +248,6 @@
 }
 
 @media (min-width: 992px) {
- 
   .menuProducts {
     display: flex;
     gap: 29px;
@@ -269,5 +263,4 @@
     height: 100%;
     object-fit: cover;
   }
-
 }

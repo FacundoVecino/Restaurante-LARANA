@@ -32,7 +32,7 @@ const MenuView = () => {
         <h3 className="text-center mt-4">Loading Dishes...</h3>
       ) : (
         <div className="menuProducts">
-          <ProductTable products={products}  />
+          <ProductTable products={products} />
         </div>
       )}
     </section>

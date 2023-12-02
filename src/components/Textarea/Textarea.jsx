@@ -11,7 +11,9 @@ const Textarea = (props) => {
         {...register(name, options)}
         placeholder=""
       />
-      <label className="textarea-label" htmlFor={`${name}-textarea`}>{label}</label>
+      <label className="textarea-label" htmlFor={`${name}-textarea`}>
+        {label}
+      </label>
     </fieldset>
   );
 };

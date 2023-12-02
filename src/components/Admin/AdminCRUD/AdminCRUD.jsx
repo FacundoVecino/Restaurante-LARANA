@@ -1,6 +1,5 @@
-import AdminForm from "./AdminForm/AdminForm.jsx"
+import AdminForm from "./AdminForm/AdminForm.jsx";
 import useProduct from "../../../stores/useProducts.js";
-
 
 const AdminCRUD = () => {
   const { setProducts } = useProduct();
@@ -8,8 +7,7 @@ const AdminCRUD = () => {
     <section className="d-flex justify-content-center">
       <AdminForm setProducts={setProducts} />
     </section>
-    
-  )
-}
+  );
+};
 
-export default AdminCRUD
+export default AdminCRUD;

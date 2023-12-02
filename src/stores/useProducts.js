@@ -5,7 +5,7 @@ const useProduct = create((set, get) => ({
   setProducts: (newProduct) => {
     const newProducts = [...get().products, newProduct];
 
-    return set({ products: newProducts })
+    return set({ products: newProducts });
   },
 }));
 
