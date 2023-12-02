@@ -1,9 +1,13 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+
+import AccessPanelView from "./views/AccessPanelView";
 import LoginView from "./views/LoginView";
 import RegisterView from "./views/RegisterView";
-import { useSession } from "./stores/useSession";
-import Profile from "./components/UserSupport/Profile";
 import UserView from "./views/UserView";
+
+import { useSession } from "./stores/useSession";
+
+import Profile from "./components/UserSupport/Profile";
 import Support from "./components/UserSupport/Support";
 import Navbar from "./components/Common/Navbar";
 import Footer from "./components/Common/Footer";
@@ -16,25 +20,21 @@ const Router = () => {
      <Navbar/>
       <main>
         <Routes>
-          <Route
-            path="/login"
-            element={isLoggedIn ? <Navigate to="/user" /> : <LoginView />}
-          />
-          <Route
-            path="/register"
-            element={isLoggedIn ? <Navigate to="/" /> : <RegisterView />}
-          />
+          <Route path="/access" element={<AccessPanelView />}>
+            <Route index element={<LoginView />} />
+            <Route path="register" element={<RegisterView />} />
+          </Route>
+          
           <Route
             path="/user"
             element={
               isLoggedIn ? (
                 <UserView />
               ) : (
-                <Navigate to="/" />
+                <Navigate to="/access" />
               )
             }
           >
-            {/* Rutas secundarias bajo /user */}
             <Route index element={<Profile/>} />
             <Route path="support" element={<Support/>} />
           <Route path="*" element={<Error404/>}/>

@@ -1,4 +1,4 @@
-import './Input.css'
+import './Input.css';
 
 const Input = (props) => {
   const {
@@ -11,6 +11,7 @@ const Input = (props) => {
     error = false,
     readOnly = false,
   } = props;
+   console.log()
   return (
     <fieldset className={`container px-5 ${className}`}>
       <input
@@ -18,12 +19,15 @@ const Input = (props) => {
         id={`${name}-input`}
         className={`form-control ${error ? "is-invalid" : ''} `}
         placeholder=""
-        {...register(name, {...options, readOnly})}
+        {...(register ? register(name, { ...options, readOnly }) : {})}
         readOnly={readOnly}
       />
       <label htmlFor={`${name}-input`}>{label}</label>
+      {error && options.errorMessage && (
+        <p className="error-message">{options.errorMessage}</p>
+      )}
     </fieldset>
   );
 };
-export default Input;
 
+export default Input;

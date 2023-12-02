@@ -11,7 +11,7 @@ export const postLoginFn = async (formdata) => {
 
   const foundUser = users.find(
     (item) =>
-      item.email === formdata.email&& item.password === formdata.password
+      item.email === formdata.email && item.password === formdata.password
   );
 
     if(!foundUser){
