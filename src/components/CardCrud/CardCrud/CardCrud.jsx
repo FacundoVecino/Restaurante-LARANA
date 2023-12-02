@@ -2,7 +2,7 @@ import { FaEdit } from "react-icons/fa";
 import "./CardCrud.css";
 
 const CardCrud = (props) => {
-  const { product } = props;
+  const { product, openModal } = props;
 
   return (
     <article className="menuCard card d-flex flex-row my-4">
@@ -20,6 +20,7 @@ const CardCrud = (props) => {
       <div className="d-flex align-items-center px-4">
         <button
           className="button-edit"
+          onClick={() => openModal(product)}
           data-bs-toggle="modal"
           data-bs-target="#modalCard"
         >

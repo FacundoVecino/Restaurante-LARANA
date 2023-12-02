@@ -1,15 +1,13 @@
-/* ModalMenu.css */
-
 .modal-content {
   background-color: rgba(0, 0, 0, 0) !important;
   margin-top: 8rem;
-  border: none !important;
 }
 
 .customModal {
   margin-bottom: 1px;
   margin-left: 3px;
   border-radius: 0;
+  border: none !important;
 }
 
 .card-img-top {
@@ -50,5 +48,5 @@
 }
 
 .btn-close {
-  background-color: #ca0c2b;
+  background-color: #ca0c2b !important;
 }

@@ -1,4 +1,13 @@
-w 
+@font-face {
+  font-family: 'TAN-PEARL-Regular';
+  src: url(../src/assets/fonts/TAN-PEARL-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../src/assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
