@@ -20,9 +20,6 @@ import Profile from "./components/UserSupport/Profile";
 import Support from "./components/UserSupport/Support";
 import Navbar from "./components/Common/Navbar";
 import Footer from "./components/Common/Footer";
-import Error404 from "./views/Error404";
-
-import "./App.css";
 
 const Router = () => {
   const { isLoggedIn } = useSession();
@@ -34,23 +31,24 @@ const Router = () => {
           <Route path="/access" element={<AccessPanelView />}>
             <Route index element={<LoginView />} />
             <Route path="register" element={<RegisterView />} />
+            <Route path="login" element={<LoginView />} />
           </Route>
 
           <Route
             path="/user"
             element={isLoggedIn ? <UserView /> : <Navigate to="/access" />}
-          />
-          <Route index element={<Profile />} />
-          <Route path="support" element={<Support />} />
+          >
+            <Route index element={<Profile />} />
+            <Route path="support" element={<Support />} />
+          </Route>
           <Route path="/" element={<MenuView />} />
-          <Route path="login" element={<LoginView />} />
           <Route path="details" element={<DetailsView />} />
-          <Route path="*" element={<ErrorView />} />
           <Route path="admin" element={<AdminView />}>
             <Route index element={<AdminProducts />} />
             <Route path="users" element={<AdminUsers />} />
             <Route path="crud" element={<AdminCRUD />} />
           </Route>
+          <Route path="*" element={<ErrorView />} />
         </Routes>
       </main>
       <Footer />

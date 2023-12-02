@@ -6,11 +6,11 @@ const UserSupportNav = () => {
 
   return (
     <div className="container py-5">
-      <ul className="nav nav-underline d-flex justify-content-around">
+      <ul className="nav second-nav nav-underline d-flex justify-content-around">
         <li className="nav-item">
           <Link
             to="/user"
-            className={`nav-link ${
+            className={`nav-link custom-link ${
               location.pathname === "/user" ? "active" : ""
             }`}
           >
@@ -20,7 +20,7 @@ const UserSupportNav = () => {
         <li className="nav-item">
           <Link
             to="/user/support"
-            className={`nav-link ${
+            className={`nav-link custom-link ${
               location.pathname === "/user/support" ? "active" : ""
             }`}
           >
