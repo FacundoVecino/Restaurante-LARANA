@@ -23,6 +23,9 @@ const Input = (props) => {
         readOnly={readOnly}
       />
       <label htmlFor={`${name}-input`}>{label}</label>
+      {error && options.errorMessage && (
+        <p className="error-message">{options.errorMessage}</p>
+      )}
     </fieldset>
   );
 };

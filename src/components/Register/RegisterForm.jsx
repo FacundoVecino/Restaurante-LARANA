@@ -115,14 +115,17 @@ const RegisterForm = () => {
         name="password"
         register={register}
         error={!!errors?.password}
-        className="mb-3"
+        className="mb-2"
         options={{
           minLength: 8,
           maxLength: 15,
-          pattern: /^(?=.*[a-z])(?=.*[A-Z]).{8,15}$/,
+          pattern: {
+            value: /^(?=.*[a-z])(?=.*[A-Z]).{8,15}$/,
+          },
           required: true,
         }}
       />
+     <p >La contraseña debe contener al menos una letra minúscula, una letra mayúscula y tener una longitud entre 8 y 15 caracteres.</p>
       <ButtonRegisterLogin text="Sing Up"/>
       <p className="my-2 text-center">
       Do you already have an accountt?<Link to="/register"> Log in </Link>

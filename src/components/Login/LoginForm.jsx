@@ -41,7 +41,7 @@ const[showPwd, setShowPwd]= useState(false)
       login(data);
       
       // Navegar a inicio pero estando logueado
-      navigate("/");
+      navigate("/user");
     },
     onError: (err) => {
       Swal.close();
@@ -62,6 +62,7 @@ const[showPwd, setShowPwd]= useState(false)
     <form onSubmit={onSubmitRHF(handleSubmit)} className="text-center formsLogin py-4">
      <h4>Welcome to LARANA</h4>
       <Input
+        type="email"
         label="Email"
         placeholder="Ingrese su email"
         name="email"
@@ -86,6 +87,7 @@ const[showPwd, setShowPwd]= useState(false)
           minLength: 8,
           maxaLength: 15,
           required: true,
+          message: "UAU"
         }}
       />
        <div className="eyePasword" onClick={() => setShowPwd(!showPwd)}>

@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
-import "../../components/UserSupport/UserSupportNav/UserSupportNav.css";
-import logo from "../../assets/Logo.png";
+import "../UserSupport/UserSupportNav/UserSupportNav.css"
+import logo from "../../assets/logo.png";
+
 const AccessPanelNav = () => {
   const location = useLocation();
 
@@ -10,7 +11,7 @@ const AccessPanelNav = () => {
       <ul className="nav nav-underline d-flex justify-content-around">
         <li className="nav-item">
           <Link
-            to="/access"
+            to="/access/"
             className={`nav-link ${
               location.pathname === "/access" ? "active" : ""
             }`}

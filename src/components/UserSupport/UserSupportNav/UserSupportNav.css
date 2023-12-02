@@ -84,6 +84,3 @@ border: none;
 .buttonSave:hover {
   background: #050101;
 }
-.editing label {
-  color: #ff0000; /* Cambia esto al color que prefieras */
-}
