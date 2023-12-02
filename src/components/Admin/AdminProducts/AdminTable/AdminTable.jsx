@@ -2,8 +2,9 @@ import CardCrud from "../../../CardCrud/Card/CardCrud.jsx";
 import "./AdminTable.css";
 
 const AdminTable = (props) => {
-  const { products } = props;
+  const { products = [] } = props;
 
+  console.log(products);
   return (
     <div className="products-table">
       {products.map((product) => (
