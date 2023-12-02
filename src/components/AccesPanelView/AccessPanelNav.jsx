@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import "../UserSupport/UserSupportNav/UserSupportNav.css"
+import "../UserSupport/UserSupportNav/UserSupportNav.css";
 import logo from "../../assets/logo.png";
 
 const AccessPanelNav = () => {
@@ -10,9 +10,11 @@ const AccessPanelNav = () => {
       <img src={logo} className="logo" alt="Logo" />
       <ul className="nav second-nav nav-underline d-flex justify-content-around">
         <li className="nav-item">
-        <Link
+          <Link
             to="/access"
-            className={`nav-link custom-link ${location.pathname === "/access" ? 'active' : ''}`}
+            className={`nav-link custom-link ${
+              location.pathname === "/access" ? "active" : ""
+            }`}
           >
             Login
           </Link>

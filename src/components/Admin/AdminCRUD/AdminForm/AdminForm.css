@@ -1,0 +1,11 @@
+form {
+  border-radius: 40px !important;
+  background: rgba(22, 4, 4, 0.95) !important;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 800px;
+}
+
+h1 {
+  color: #e8d191 !important;
+}

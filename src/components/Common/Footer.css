@@ -1,15 +1,15 @@
 body {
-    background-color: #4D000D;
+  background-color: #4d000d;
 }
 footer {
-    margin-bottom: 1rem;
-    background-color: #4D000D;
-    color: #E8D191;
+  margin-bottom: 1rem;
+  background-color: #4d000d;
+  color: #e8d191;
 }
 footer a {
-    text-decoration: none;
-    color: #E8D191;
+  text-decoration: none;
+  color: #e8d191;
 }
 footer svg {
- color: #E8D191;
+  color: #e8d191;
 }

@@ -4,14 +4,9 @@ import AccessPanelNav from "../components/AccesPanelView/AccessPanelNav";
 const AccessPanelView = () => {
   return (
     <section>
-      <AccessPanelNav/>
+      <AccessPanelNav />
       <Outlet />
     </section>
-  )
-}
-export default AccessPanelView
-
-
-
-
-
+  );
+};
+export default AccessPanelView;
