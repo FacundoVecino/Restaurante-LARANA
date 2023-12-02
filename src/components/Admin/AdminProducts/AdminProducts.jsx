@@ -1,25 +1,19 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import useProduct from "../../../stores/useProducts.js";
 import ModalCrud from "../../CardCrud/ModalCrud/ModalCrud.jsx";
 import AdminTable from "./AdminTable/AdminTable.jsx";
 
-
 const AdminProducts = () => {
-  const { products, setProducts } = useProduct();
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const { products, setProducts, getProducts } = useProduct();
 
-  const openModal = (product) => {
-    setSelectedProduct(product);
-  };
+  useEffect(() => {
+    getProducts();
+  }, [getProducts]);
 
   return (
     <section>
-      <AdminTable
-        products={products}
-        setProducts={setProducts}
-        openModal={openModal}
-      />
-      <ModalCrud product={selectedProduct} />
+      <AdminTable products={products} setProducts={setProducts} />
+      <ModalCrud />
     </section>
   );
 };

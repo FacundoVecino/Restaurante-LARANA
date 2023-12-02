@@ -64,10 +64,9 @@ const AdminForm = (props) => {
           required: true,
           minLength: 4,
           maxLength: 30,
-          pattern: /^\$\d{1,},\d{2}$/,
         }}
         className="my-4"
-        type="text"
+        type="number"
         label="Cost USD"
         name="cost"
         error={!!errors.cost}

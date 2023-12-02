@@ -1,4 +1,29 @@
 {
-  "products": [],
+  "products": [
+    {
+      "image": "https://s3.abcstatics.com/media/gurmesevilla/2012/01/comida-rapida-casera.jpg",
+      "name": "Chancho",
+      "cost": "$100,00",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": true,
+      "id": "5ff3f454-e5e0-4e72-bbc9-8d573b834a95"
+    },
+    {
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "41000",
+      "cost": "$100,00",
+      "ingredients": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "available": true,
+      "id": "15b60b51-f7e0-4492-9607-e0efe0ca4dac"
+    },
+    {
+      "image": "https://s3.abcstatics.com/media/gurmesevilla/2012/01/comida-rapida-casera.jpg",
+      "name": "UCSE Mensual",
+      "cost": "$100,00",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": true,
+      "id": "1ff748e8-210c-4557-a6fe-094f4e112bbd"
+    }
+  ],
   "users": []
 }

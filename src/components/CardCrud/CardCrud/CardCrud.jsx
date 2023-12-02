@@ -15,7 +15,7 @@ const CardCrud = (props) => {
       </div>
       <div className="menuText p-4 flex-grow-1">
         <h5>{product.name}</h5>
-        <p className="foodPrice">{product.cost}</p>
+        <p className="foodPrice">${product.cost}</p>
       </div>
       <div className="d-flex align-items-center px-4">
         <button
