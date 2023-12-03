@@ -1,5 +1,5 @@
-const ErrorView = () => {
-  return <div>ErrorView</div>;
+const Error404 = () => {
+  return <h1>Error404</h1>;
 };
 
-export default ErrorView;
+export default Error404;
