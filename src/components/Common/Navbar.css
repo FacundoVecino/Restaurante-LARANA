@@ -19,13 +19,11 @@ a svg {
   .count-products {
     position: absolute;
     top: 55%;
-    right: 0;
-  
+    right: 35%;
     background-color: #000;
     color: #fff;
     width: 25px;
-    height: 25px;
-  
+    height: 25px;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +52,6 @@ a svg {
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-  
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
   

@@ -42,7 +42,7 @@ const Navbar = ({allProducts, setAllProducts, total, countProducts, setCountProd
           </div>
         </div>
         <div
-          className={`container-cart-products ${
+          className={`mb-5 mx-2 py-2 container-cart-products ${
             active ? '' : 'hidden-cart'
           }`}
         >
