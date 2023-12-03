@@ -49,7 +49,6 @@
       "id": "ff07964e-12b0-4cf9-b570-c89120993610"
     }
   ],
-
   "users": [
     {
       "firstname": "Mauricio",
@@ -59,6 +58,25 @@
       "password": "aA1*bbbb",
       "isAdmin": false,
       "id": 1
+    },
+    {
+      "firstname": "asdasd",
+      "lastname": "asdasdd",
+      "username": "assdd",
+      "email": "asdasd@gmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 2
     }
+  ],
+  "cart": [
+    [
+      {
+        "id": "fba98e7c-7fbd-417e-96f4-2ca78d4212c6",
+        "name": "comida rica",
+        "price": "$15,00",
+        "ingredients": "cosas cosas cosas cosas cosas cosas cosas cosas cosas cosas cosas cosas"
+      }
+    ]
   ]
 }

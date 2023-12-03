@@ -1,7 +1,8 @@
 import "./CardModal.css";
-
 const CardModal = (props) => {
   const { product } = props;
+
+
 
   const handleSubmit = () => {
     const productInCart = {
@@ -11,8 +12,9 @@ const CardModal = (props) => {
       ingredients: product.ingredients,
     };
 
-    console.log(productInCart);
-  };
+    console.log(productInCart)
+
+  }
 
   const shortText = (text) => {
     if (text.length > 40) {

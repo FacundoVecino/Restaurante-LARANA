@@ -25,3 +25,18 @@ export const postProductsFn = async (body) => {
   const data = await res.json();
   return data;
 };
+
+export const postToCart = async (products) => {
+  const res = await fetch(`${API_URL}/cart`, {
+    method: "POST",
+    body: JSON.stringify(products),
+    headers: { "Content-Type": "application/json" },
+  });
+
+  if (!res.ok) {
+    throw new Error("Ocurrió un error al agregar productos al carrito!");
+  }
+
+  const data = await res.json();
+  return data;
+};
