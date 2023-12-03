@@ -126,10 +126,10 @@ const LoginForm = () => {
         <ButtonRegisterLogin text="log in" />
       </div>
       <p className="text-center">
-        Dont have an account?<Link to="/register"> Sign Up </Link>
+        Dont have an account?<Link to="/register"> Sig up </Link>
       </p>
       <p className="text-center">
-        Forgot Password? Get in<Link to="/register"> Ingresa </Link>
+        Forgot Password? Get in<Link to="/register"> Log in </Link>
       </p>
     </form>
   );
