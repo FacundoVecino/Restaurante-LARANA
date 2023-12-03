@@ -3,10 +3,11 @@ import "./AboutUs.css";
 const AboutUs = () => {
   return (
     <div className="contSection">
-      <section>
-        <div className="title mb-4">
+      <section >
+        <div className="titleIinfo text-center mb-4">
           <h2>About Us</h2>
         </div>
+        <div className="containerCardsInfo">
         <article className="infoCard mt-3">
           <h5>Welcome to LARANA: Where Elegance Meets Flavor</h5>
           <p>
@@ -45,9 +46,10 @@ const AboutUs = () => {
             at LARANA, every meal is a unique experience.
           </p>
         </article>
+        </div>
       </section>
       <section className="mt-4">
-        <div className="title mb-4">
+        <div className="titleIinfo mb-4">
           <h2>Founders</h2>
         </div>
         <article className="profileCard d-flex mb-3">

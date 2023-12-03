@@ -1,12 +1,9 @@
-import ComeWeb from "../ComeWeb/ComeWeb";
-
-import Contact from "../Contact/Contact"
+import ComeWeb from "../components/ComeWeb/ComeWeb";
 
 const ComeWebView = () => {
   return (
     <>
       <ComeWeb />
-      <Contact />
     </>
   );
 };
