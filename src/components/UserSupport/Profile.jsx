@@ -5,11 +5,10 @@ import { toast } from "sonner";
 import Swal from "sweetalert2";
 import { MdLogout } from "react-icons/md";
 import { putUserFn } from "../../api/users";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import Input from "../Input/Input";
 import { useEffect, useState } from "react";
-
 
 const Profile = () => {
   //-----------------------Zustand----------------------------------------------
@@ -36,10 +35,7 @@ const Profile = () => {
     }
   }, [user, setValue]);
 
-
-
   //-----------------------TQUERY----------------------------------------------
-  const queryClient = useQueryClient();
 
   const { mutate: putUser } = useMutation({
     mutationFn: putUserFn,
@@ -49,8 +45,6 @@ const Profile = () => {
       toast.success("Usuario actualizado");
       //limpiar estado global
       clearUser();
-      //indicar que la tabla se tiene que recargar
-      queryClient.invalidateQueries("users");
       setEditingFields({});
     },
     onError: () => {
@@ -192,7 +186,9 @@ const Profile = () => {
             </button>
           </div>
           <div className="mt-3">
-            <button type="submit" className="buttonSave">Save</button>
+            <button type="submit" className="buttonSave">
+              Save
+            </button>
           </div>
         </form>
         {isLoggedIn && (

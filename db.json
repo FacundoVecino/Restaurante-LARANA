@@ -1,29 +1,64 @@
 {
+  "products": [
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Weekend_in_Buenos_Aires.jpg",
+      "name": "comida rica",
+      "cost": "$15,00",
+      "ingredients": "cosas cosas cosas cosas cosas cosas cosas cosas cosas cosas cosas cosas",
+      "available": true,
+      "id": "fba98e7c-7fbd-417e-96f4-2ca78d4212c6"
+    },
+    {
+      "image": "https://www.frigorificosada.com.ar/blog/wp-content/uploads/2023/07/Como-hacer-un-asado-argentino-a-la-parrilla.jpg",
+      "name": "Lasagna con manteca y algo mas",
+      "cost": "$81,00",
+      "ingredients": "La lasaña es posiblemente uno de los platos más populares de la cocina mundial. También es uno de nuestros platos preparados más exitosos, no en vano, disponemos de una amplia gama de lasañas congeladas, todas ellas deliciosas combinaciones de pasta fresca con riquísimos rellenos, desde los más tradicionales de boloñesa, a los más nuevos como el de 4 quesos o el vegetal. Incluso en Maheso elaboramos una lasaña sin gluten, apta para personas con celiaquía o intolerancia al gluten; y una lasaña con pasta integral, leche desnatada y carne de pavo y pollo, ideal para los que quieren mantener la línea.",
+      "available": true,
+      "id": "1b680157-f60f-4c9e-8c8c-b2c6495f63c2"
+    },
+    {
+      "image": "https://th.bing.com/th/id/OIG.b7fbyFnoRp_h0eDim7rl.jpg",
+      "name": "dasdsaadsasd",
+      "cost": "$62,00",
+      "ingredients": "cosas ricas eslaboradas en manskis oiasplñsapoo lsaorem socnuando ",
+      "available": true,
+      "id": "283f63fa-891c-41cc-848b-4801ef96c5d9"
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png",
+      "name": "lasagna",
+      "cost": "$50,00",
+      "ingredients": "sadsaddsadsasadsaddsadsasadsaddsadsasadsaddsadsasadsaddsadsasadsaddsadsa",
+      "available": true,
+      "id": "e75b2a83-6195-4cb2-afc0-59dd98986798"
+    },
+    {
+      "image": "https://www.frigorificosada.com.ar/blog/wp-content/uploads/2023/07/Como-hacer-un-asado-argentino-a-la-parrilla.jpg",
+      "name": "sssssssssssssssss",
+      "cost": "$43,00",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaa",
+      "available": true,
+      "id": "e92a9772-5d10-4fff-b5f8-a8d034e43159"
+    },
+    {
+      "image": "https://www.frigorificosada.com.ar/blog/wp-content/uploads/2023/07/Como-hacer-un-asado-argentino-a-la-parrilla.jpg",
+      "name": "zzzzzzzzzzzzzzz",
+      "cost": "$13,00",
+      "ingredients": "azzzzzzzzzzzzzzzzz",
+      "available": false,
+      "id": "ff07964e-12b0-4cf9-b570-c89120993610"
+    }
+  ],
+
   "users": [
-    {
-      "firstname": "Maaaa",
-      "lastname": "Guns",
-      "username": "Mau",
-      "email": "mau_gunsett@hotmail.com",
-      "id": 1
-    },
-    {
-      "firstname": "nel",
-      "lastname": "Gunsettff",
-      "username": "maudd",
-      "email": "mau_gunsett@hotmail.comdd",
-      "password": "aA1*bbbb",
-      "isAdmin": false,
-      "id": 2
-    },
     {
       "firstname": "Mauricio",
       "lastname": "Gunsett",
-      "username": "mau_gunsett@hotmail.com",
+      "username": "Mau",
       "email": "mau_gunsett@hotmail.com",
       "password": "aA1*bbbb",
       "isAdmin": false,
-      "id": 3
+      "id": 1
     }
   ]
 }

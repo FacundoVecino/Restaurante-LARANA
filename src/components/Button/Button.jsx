@@ -1,12 +1,11 @@
 import { useState } from "react";
 
-
 const Button = () => {
   const [showOverlay, setShowOverlay] = useState(false);
 
   const handleClick = () => {
     setShowOverlay(true);
-  
+
     setTimeout(() => {
       setShowOverlay(false);
     }, 500);
