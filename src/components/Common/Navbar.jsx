@@ -30,7 +30,7 @@ const Navbar = ({allProducts, setAllProducts, total, countProducts, setCountProd
           </NavLink>
         </li>
         <li className='flex-fill text-center'>
-          <NavLink to="/cart">
+          <NavLink to="/admin">
           <div className='container-icon'>
         <div
           className='container-cart-icon'
