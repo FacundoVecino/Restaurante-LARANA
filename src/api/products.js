@@ -26,10 +26,10 @@ export const postProductsFn = async (body) => {
   return data;
 };
 
-export const postToCart = async (products) => {
+export const addToCartFn = async (products) => {
   const res = await fetch(`${API_URL}/cart`, {
     method: "POST",
-    body: JSON.stringify(products),
+    body: JSON.stringify({ cart: products }),
     headers: { "Content-Type": "application/json" },
   });
 

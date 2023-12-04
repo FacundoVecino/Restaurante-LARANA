@@ -1,13 +1,10 @@
 import { create } from "zustand";
 
-const useCart = create((set, get) => ({
-  cartItems: [],
-  addToCart: (newCartItem) => {
-    const newCartItems = [...get().cartItems, newCartItem];
-    set({ cartItems: newCartItems });
-  },
-  clearCart: () => {
-    set({ cartItems: [] });
+const useCart = create((set) => ({
+  cart: [],
+  addProductToCart: (product) => {
+    console.log("Adding product to cart", product);
+    set((state) => ({ cart: [...state.cart, product] }));
   },
 }));
 
