@@ -1,5 +1,5 @@
 import './Footer.css'; 
-import icono from '../../assets/Logo.png'
+import icono from '../../assets/images/Logo.png'
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 

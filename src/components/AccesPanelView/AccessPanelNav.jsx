@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import "../UserSupport/UserSupportNav/UserSupportNav.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/images/logo.png";
 
 const AccessPanelNav = () => {
   const location = useLocation();
