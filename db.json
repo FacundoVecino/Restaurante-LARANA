@@ -59,6 +59,108 @@
       "password": "aA1*bbbb",
       "isAdmin": false,
       "id": 1
+<<<<<<< HEAD
+    },
+    {
+      "firstname": "nel",
+      "lastname": "Gunsettff",
+      "username": "maudd",
+      "email": "mau_gunsett@hotmail.comdd",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 2
+    },
+    {
+      "firstname": "awsfadfd",
+      "lastname": "Gunsett",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 3
+    },
+    {
+      "firstname": "Nadie",
+      "lastname": "Nadie",
+      "username": "Nadie",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 4
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Gunsett",
+      "username": "Nadie",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 5
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Nadie",
+      "username": "Mauricio",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 6
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Gunsett",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "mauricioloana@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 7
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Gunsett",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 8
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Gunsett",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 9
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Gunsett",
+      "username": "aaaaa",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 10
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Gunsett",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "belinda_erips_8@hotmail.com",
+      "password": "Aa1*bbbb",
+      "isAdmin": false,
+      "id": 11
+    },
+    {
+      "firstname": "Mauricio",
+      "lastname": "Gunsett",
+      "username": "mau_gunsett@hotmail.com",
+      "email": "mau_gunsett@hotmail.com",
+      "password": "aA1*bbbb",
+      "isAdmin": false,
+      "id": 12
+=======
+>>>>>>> e851b7a4f195e8275a509ca41a6531aceb4c0a2f
     }
   ]
 }

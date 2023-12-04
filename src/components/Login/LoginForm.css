@@ -27,62 +27,10 @@ h1 {
   margin-top: 100px;
 }
 
-.eyePasword {
-  position: absolute;
-  right: 480px;
-  bottom: 117px;
-}
-
-@media screen and (max-width: 992px) {
-  .logoRegister {
-    width: 250px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .formsRegister {
-    width: 350px;
-  }
-  .eyePasword {
-    position: absolute;
-    top: 465px;
-    right: 185px;
-  }
-}
-
-@media screen and (max-width: 518px) {
-  .formsRegister {
-    width: 350px;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .formsRegister {
-    width: 350px;
-  }
-}
-
-@media screen and (max-width: 332px) {
-  .formsRegister {
-    width: 230px;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .formsRegister {
-    width: 250px;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .formsLogin {
-    width: 400px;
-    padding: 20px;
-  }
-
-  .eyePasword {
-    position: absolute;
-    top: 465px;
-    right: 100px;
-  }
+.eyePasword{
+  position: relative;
+  right: 90px;
+  bottom: -15px;
+  float: right;
+  
 }
