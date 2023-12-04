@@ -58,6 +58,15 @@
       "password": "aA1*bbbb",
       "isAdmin": false,
       "id": 1
+    },
+    {
+      "firstname": "Facundo",
+      "lastname": "Vecino",
+      "username": "FacundoV",
+      "email": "facundovecino32@gmail.com",
+      "password": "Fnv240804",
+      "isAdmin": false,
+      "id": 2
     }
   ]
 }
