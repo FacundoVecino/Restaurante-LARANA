@@ -39,7 +39,7 @@ const Router = () => {
         countProducts={countProducts}
         setCountProducts={setCountProducts}
       />
-      <main className="container py-3">
+      <main className="py-3">
         <Routes>
           <Route path="/access" element={<AccessPanelView />}>
             <Route index element={<LoginView />} />

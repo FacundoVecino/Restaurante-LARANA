@@ -40,7 +40,7 @@ const ModalMenu = () => {
               </div>
               <h6 className="foodPrice mt-2">Precio</h6>
               <div className="text-center">
-                <button className="customBtnModal">Add to cart</button>
+                <button  className="customBtnModal">Add to cart</button>
               </div>
             </div>
           </div>

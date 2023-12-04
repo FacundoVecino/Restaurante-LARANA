@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-const useProduct = create((set, get) => ({
+export const useProduct = create((set, get) => ({
   products: [],
   setProducts: (newProduct) => {
     const newProducts = [...get().products, newProduct];

@@ -47,9 +47,16 @@
       "ingredients": "azzzzzzzzzzzzzzzzz",
       "available": false,
       "id": "ff07964e-12b0-4cf9-b570-c89120993610"
+    },
+    {
+      "image": "https://www.tangol.com/blog/Fotos/Galeria/asado_0_202006190839380.JPG",
+      "name": "Enzo",
+      "cost": "$20,00",
+      "ingredients": "carne y verdura",
+      "available": false,
+      "id": "990409d4-04ae-45cc-b051-0ee7e088f456"
     }
   ],
-
   "users": [
     {
       "firstname": "Mauricio",

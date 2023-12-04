@@ -1,9 +1,8 @@
+
 import "./CardModal.css";
 
-const CardModal = (props) => {
-  const { product } = props;
-
-  const handleSubmit = () => {
+const CardModal = ({ product, onAddProduct }) => {
+  const addToCart = () => {
     const productInCart = {
       id: product.id,
       name: product.name,
@@ -11,6 +10,7 @@ const CardModal = (props) => {
       ingredients: product.ingredients,
     };
 
+    onAddProduct(productInCart);
     console.log(productInCart);
   };
 
@@ -71,13 +71,13 @@ const CardModal = (props) => {
                 </div>
                 <h6 className="foodPrice mt-2">{product.cost}</h6>
                 <div className="text-center">
-                  <button
-                    className="customBtnModal"
-                    type="submit"
-                    onClick={handleSubmit}
-                  >
-                    Add to cart
-                  </button>
+                <button
+        className="customBtnModal"
+        type="button"
+        onClick={addToCart}
+      >
+        Add to cart
+      </button>
                 </div>
               </div>
             </div>

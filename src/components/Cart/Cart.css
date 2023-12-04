@@ -1,11 +1,4 @@
-
-a svg {
-
-    font-size: 40px;
-    color: #4D000D;
-  }
-
-  .icon-cart {
+.icon-cart {
     width: 40px;
     height: 40px;
     stroke: #000;
@@ -17,25 +10,12 @@ a svg {
   .container-icon {
     position: relative;
   }
-  .count-products {
-    position: absolute;
-    top: 55%;
-    right: 35%;
-    background-color: #000;
-    color: #fff;
-    width: 25px;
-    height: 25px;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-  }
-  
-  #contador-productos {
-    font-size: 12px;
-  }
-  
-  .container-cart-products {
+
+.container-cart-products {
+    display: none;
+}
+.container-cart-icon:hover .container-cart-products {
+    display: block; 
     position: absolute;
     bottom: 0;
     color: #E8D191;
@@ -45,7 +25,8 @@ a svg {
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-  }
+}
+
   
   .cart-product {
     display: flex;
