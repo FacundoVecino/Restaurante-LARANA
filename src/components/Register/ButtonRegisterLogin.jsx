@@ -2,14 +2,13 @@ import { useState } from "react";
 import "../button/Button.css";
 
 const ButtonRegisterLogin = (props) => {
-
-  const {text} = props;
+  const { text } = props;
 
   const [showOverlay, setShowOverlay] = useState(false);
 
   const handleClick = () => {
     setShowOverlay(true);
-  
+
     setTimeout(() => {
       setShowOverlay(false);
     }, 500);
@@ -18,7 +17,7 @@ const ButtonRegisterLogin = (props) => {
   return (
     <div className="px-5">
       <button className="btnRegisterLogin" type="submit" onClick={handleClick}>
-      {text}
+        {text}
         {showOverlay && <span className="overlay" />}
       </button>
     </div>

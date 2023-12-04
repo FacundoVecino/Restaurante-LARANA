@@ -14,7 +14,7 @@ import { useState } from "react";
 
 const LoginForm = () => {
   //ZUSTAND----------------------------------------------------------------
- 
+
   const { login } = useSession();
 
   //RRD ----------------------------------------------------------------
@@ -22,7 +22,7 @@ const LoginForm = () => {
   const navigate = useNavigate();
 
   //RHF  ----------------------------------------------------------------
-const[showPwd, setShowPwd]= useState(false)
+  const [showPwd, setShowPwd] = useState(false);
   const {
     register,
     formState: { errors },
@@ -39,7 +39,7 @@ const[showPwd, setShowPwd]= useState(false)
 
       // Loguear al usuario
       login(data);
-      
+
       // Navegar a inicio pero estando logueado
       navigate("/user");
     },
@@ -59,8 +59,11 @@ const[showPwd, setShowPwd]= useState(false)
   // RENDER -----------------------------------------------------------
 
   return (
-    <form onSubmit={onSubmitRHF(handleSubmit)} className="text-center formsLogin py-4">
-     <h4>Welcome to LARANA</h4>
+    <form
+      onSubmit={onSubmitRHF(handleSubmit)}
+      className="text-center formsLogin py-4"
+    >
+      <h4>Welcome to LARANA</h4>
       <Input
         type="email"
         label="Email"
@@ -88,7 +91,7 @@ const[showPwd, setShowPwd]= useState(false)
           minLength: 8,
           maxaLength: 15,
           required: true,
-          message: "UAU"
+          message: "UAU",
         }}
       />
        <div className="eyePasword" onClick={() => setShowPwd(!showPwd)}>
@@ -103,13 +106,13 @@ const[showPwd, setShowPwd]= useState(false)
           </div>
           </div>
       <div className="mb-3">
-        <ButtonRegisterLogin text="log in"/>
+        <ButtonRegisterLogin text="log in" />
       </div>
       <p className="text-center">
-      Dont have an account?<Link to="/register"> Sign Up </Link>
+        Dont have an account?<Link to="/register"> Sign Up </Link>
       </p>
       <p className="text-center">
-      Forgot Password? Get in<Link to="/register"> Ingresa </Link>
+        Forgot Password? Get in<Link to="/register"> Ingresa </Link>
       </p>
     </form>
   );

@@ -1,0 +1,13 @@
+
+footer {
+  margin-bottom: 1rem;
+  background-color: #4d000d;
+  color: #e8d191;
+}
+footer a {
+  text-decoration: none;
+  color: #e8d191;
+}
+footer svg {
+  color: #e8d191;
+}

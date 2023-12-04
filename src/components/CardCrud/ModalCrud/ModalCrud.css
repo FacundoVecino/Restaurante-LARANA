@@ -1,0 +1,54 @@
+/* ModalMenu.css */
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0) !important;
+  margin-top: 8rem;
+  border: none !important;
+}
+
+.customModal {
+  margin-bottom: 1px;
+  margin-left: 3px;
+  border-radius: 0;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 180px;
+  width: 100%;
+}
+
+.card-body {
+  background-color: #33000a;
+  border: none;
+  filter: brightness(1.2);
+}
+
+.card-title {
+  color: #fff;
+  font-size: 23px;
+  line-height: normal;
+  border: none;
+}
+
+.scrollText {
+  max-height: 150px;
+  overflow: auto;
+}
+
+.card-text {
+  color: #a5a5a5;
+}
+
+.customBtnModal {
+  width: 70%;
+  background-color: #730014;
+  color: #e8d191;
+  border: none;
+  border-radius: 40px;
+  font-size: 23px;
+}
+
+.btn-close {
+  background-color: #ca0c2b;
+}
