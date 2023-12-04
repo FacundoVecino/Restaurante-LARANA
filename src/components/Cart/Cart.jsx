@@ -1,5 +1,4 @@
 import useProduct from '../../stores/useProducts';
-import CardModal from '../Menu/CardModal';
 import './Cart.css';
 
 const Cart = ({ allProducts, total, onDeleteProduct, onCleanCart }) => {

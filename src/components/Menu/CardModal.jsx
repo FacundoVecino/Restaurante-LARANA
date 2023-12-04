@@ -1,17 +1,34 @@
-
+import Swal from "sweetalert2";
+import { addToCartFn } from "../../api/products";
+import useCart from "../../stores/useCart";
 import "./CardModal.css";
+const CardModal = (props) => {
+  const { product } = props;
 
-const CardModal = ({ product, onAddProduct }) => {
-  const addToCart = () => {
-    const productInCart = {
-      id: product.id,
-      name: product.name,
-      price: product.cost,
-      ingredients: product.ingredients,
-    };
+  const addProductToCart = useCart((state) => state.addProductToCart);
+  const cart = useCart((state) => state.cart);
 
-    onAddProduct(productInCart);
-    console.log(productInCart);
+  const handleSubmit = async () => {
+    // llevo producto a json server (cart)
+    addProductToCart(product);
+
+    const res = await addToCartFn(cart);
+    console.log(res);
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "bottom-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+      },
+    });
+    Toast.fire({
+      icon: "success",
+      title: "Added product!",
+    });
   };
 
   const shortText = (text) => {
@@ -74,7 +91,7 @@ const CardModal = ({ product, onAddProduct }) => {
                 <button
         className="customBtnModal"
         type="button"
-        onClick={addToCart}
+        onClick={handleSubmit}
       >
         Add to cart
       </button>

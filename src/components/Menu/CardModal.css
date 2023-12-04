@@ -155,15 +155,15 @@
   }
 
   .menuText {
-    width: 75%;
+    width: 70%;
   }
 
   .foodInfo {
-    max-height: 43px;
-    overflow: hidden;
+    max-height: 50px;
     max-width: 100%;
     line-height: normal;
     margin-bottom: 6px !important;
+    font-size: 9px;
   }
 
   .foodPrice {
@@ -175,7 +175,7 @@
   }
 
   .menuImage {
-    width: 25%;
+    width: 30%;
   }
 
   .menuImage img {
