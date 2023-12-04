@@ -5,12 +5,13 @@ import Swal from "sweetalert2";
 
 import Input from "../../../Input/Input.jsx";
 import Textarea from "../../../Textarea/Textarea.jsx";
-import Button from "../../../Button/Button.jsx";
 import ToggleSwitch from "../../../ToggleSwitch/ToggleSwitch.jsx";
+import ButtonAdmin from "../../../Buttons/ButtonAdmin/ButtonAdmin.jsx";
 
-import "./AdminForm.css";
 import { useMutation } from "@tanstack/react-query";
 import { postProductsFn } from "../../../../api/products.js";
+
+import "./AdminForm.css";
 
 const AdminForm = () => {
   const {
@@ -44,7 +45,7 @@ const AdminForm = () => {
   };
 
   return (
-    <form className="py-5" onSubmit={onSubmitRHF(handleSubmit)}>
+    <form className="form py-5" onSubmit={onSubmitRHF(handleSubmit)}>
       <h1 className="py-4 text-center">Create Product</h1>
       <Input
         register={register}
@@ -75,7 +76,7 @@ const AdminForm = () => {
         register={register}
         options={{
           required: true,
-          minLength: 4,
+          minLength: 1,
           maxLength: 30,
         }}
         className="my-4"
@@ -105,7 +106,7 @@ const AdminForm = () => {
         name="available"
         error={!!errors.available}
       />
-      <Button />
+      <ButtonAdmin />
     </form>
   );
 };

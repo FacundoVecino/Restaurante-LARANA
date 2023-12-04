@@ -13,7 +13,7 @@ const Input = (props) => {
   } = props;
 
   return (
-    <fieldset className={`container px-5 ${className}`}>
+    <fieldset className={`container px-5 fieldset-input ${className}`}>
       <input
         type={type}
         id={`${name}-input`}
@@ -22,7 +22,7 @@ const Input = (props) => {
         {...(register ? register(name, { ...options, readOnly }) : {})}
         readOnly={readOnly}
       />
-      <label htmlFor={`${name}-input`}>{label}</label>
+      <label className="label-input" htmlFor={`${name}-input`}>{label}</label>
       {error && options.errorMessage && (
         <p className="error-message">{options.errorMessage}</p>
       )}

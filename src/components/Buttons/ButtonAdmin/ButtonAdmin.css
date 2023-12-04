@@ -1,0 +1,17 @@
+.button button {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  border-radius: 40px !important;
+  padding: 1em;
+  border: none;
+  background: #730014;
+  outline: none;
+  color: #e8d191;
+}
+
+.button button:hover {
+  transition: 400ms ease;
+  background: #54000e;
+}

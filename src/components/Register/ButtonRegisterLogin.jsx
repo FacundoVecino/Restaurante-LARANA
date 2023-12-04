@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../button/Button.css";
 
 const ButtonRegisterLogin = (props) => {
   const { text } = props;

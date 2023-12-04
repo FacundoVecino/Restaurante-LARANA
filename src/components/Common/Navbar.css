@@ -6,7 +6,7 @@ body {
   bottom: 0;
   width: 100%;
   background-color: #160404;
-  border-top: 1px solid #f3f3f3;
+  border-top: 0 !important;
   display: flex;
   justify-content: space-around;
   align-items: center;
