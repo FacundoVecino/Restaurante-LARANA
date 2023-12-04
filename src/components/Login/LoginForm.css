@@ -28,9 +28,9 @@ h1 {
 }
 
 .eyePasword {
-  position: absolute;
-  right: 480px;
-  bottom: 117px;
+  position: relative;
+  left: 150px;
+  bottom: 120px;
 }
 
 @media screen and (max-width: 992px) {
@@ -43,11 +43,7 @@ h1 {
   .formsRegister {
     width: 350px;
   }
-  .eyePasword {
-    position: absolute;
-    top: 465px;
-    right: 185px;
-  }
+
 }
 
 @media screen and (max-width: 518px) {
@@ -80,9 +76,4 @@ h1 {
     padding: 20px;
   }
 
-  .eyePasword {
-    position: absolute;
-    top: 465px;
-    right: 100px;
-  }
 }
