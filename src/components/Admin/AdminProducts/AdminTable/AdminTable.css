@@ -3,3 +3,12 @@
   overflow: hidden;
   overflow-y: scroll;
 }
+
+.products-table::-webkit-scrollbar {
+  width: 7px;
+  background: transparent;
+}
+
+.products-table::-webkit-scrollbar-thumb {
+  color: #000000;
+}

@@ -6,15 +6,14 @@
 
 .menuCard {
   background-color: rgba(22, 4, 4, 0.95) !important;
-  width: 100%;
-  height: 150px !important;
+  width: 70%;
+  height: 100px !important;
   border-radius: 20px !important;
   color: #e8d191 !important;
   overflow: hidden;
 }
 
 .menuImage {
-  width: 100%;
   max-width: 400px;
 }
 
@@ -31,14 +30,15 @@
   font-family: 'Nunito';
 }
 
-@media (max-width: 990px) {
+@media (max-width: 992px) {
   .menuImage {
     width: 100%;
     max-width: 300px;
   }
 
   .menuCard {
-    height: 120px !important;
+    width: 100% !important;
+    height: 100px !important;
   }
 
   .menuText h5 {

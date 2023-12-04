@@ -7,6 +7,46 @@
       "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "available": false,
       "id": "1135dfe3-d59a-4f13-924a-d6cd17b1a4da"
+    },
+    {
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "UCSE Mensual",
+      "cost": "100",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": true,
+      "id": "98d3dda1-e625-48ce-a748-2c1a0215afb3"
+    },
+    {
+      "image": "https://s3.abcstatics.com/media/gurmesevilla/2012/01/comida-rapida-casera.jpg",
+      "name": "UCSE Mensual",
+      "cost": "10000",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": false,
+      "id": "b26363b2-dbc0-408b-ab4d-b3b7d94f7584"
+    },
+    {
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "Facundo",
+      "cost": "12121",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": true,
+      "id": "59144417-cd3d-4ee9-af17-6d2b4abf76b0"
+    },
+    {
+      "image": "https://s3.abcstatics.com/media/gurmesevilla/2012/01/comida-rapida-casera.jpg",
+      "name": "aaaaaa",
+      "cost": "1000",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": true,
+      "id": "c9f2e2ae-32af-4d51-828c-20bc21d624db"
+    },
+    {
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "Facundo",
+      "cost": "100",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": true,
+      "id": "c68d7e8c-e248-42fd-a8c4-ee316834d774"
     }
   ],
   "users": [

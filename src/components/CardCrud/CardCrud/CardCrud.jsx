@@ -5,7 +5,7 @@ const CardCrud = ({ product, openModal }) => {
 
 
   return (
-    <article className="menuCard card d-flex flex-row my-4">
+    <article className="menuCard card d-flex flex-row my-2">
       <div className="menuImage">
         <img src={product.image} className="object-fit-cover" alt={product.name} />
       </div>
