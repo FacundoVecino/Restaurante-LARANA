@@ -59,7 +59,6 @@
       "password": "aA1*bbbb",
       "isAdmin": false,
       "id": 1
-<<<<<<< HEAD
     },
     {
       "firstname": "nel",
@@ -159,8 +158,6 @@
       "password": "aA1*bbbb",
       "isAdmin": false,
       "id": 12
-=======
->>>>>>> e851b7a4f195e8275a509ca41a6531aceb4c0a2f
     }
   ]
 }
