@@ -1,0 +1,209 @@
+.contSection {
+  background-color: #4d000d;
+}
+
+@media (max-width: 767px) {
+  section {
+    width: 100%;
+    position: relative;
+  }
+
+  /* Info Cards */
+  .titleIinfo  {
+    color: #e8d191;
+    text-align: center;
+    font-family: "TAN - PEARL";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 2px;
+    position: relative;
+  }
+
+  .title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    border-bottom: 2px solid #e8d191;
+    transform: translateX(-50%);
+  }
+
+  .infoCard {
+    background-color: #160404;
+    width: 316px;
+    height: 304px;
+    border-radius: 40px;
+    margin: 0 auto;
+    padding-top: 6px;
+  }
+
+  .infoCard h5 {
+    text-align: center;
+    color: #e8d191;
+    font-family: "TAN - PEARL";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 26px !important;
+    margin-bottom: 0 !important;
+    border-bottom: none !important;
+  }
+
+  .infoCard p {
+    padding: 16px 20px;
+    line-height: 1.7;
+    color: #e8d191;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "TAN - PEARL";
+  }
+
+  /* Profile Cards */
+
+  .profileCard {
+    background-color: #160404;
+    width: 90%;
+    height: 125px;
+    border-radius: 40px;
+    margin: 0 auto;
+  }
+
+  .founderInfo {
+    flex-grow: 1;
+  }
+
+  .profileCard img {
+    width: 120px;
+    margin-left: 3%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .profileCard h6 {
+    color: #e8d191;
+    text-align: center;
+    font-family: "TAN - PEARL";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 8px;
+  }
+
+  .profileCard p {
+    color: #e8d191;
+    font-family: "TAN - PEARL";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    margin-top: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .titleIinfo  {
+    color: #e8d191;
+    text-align: center;
+    font-family: "TAN - PEARL";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: none;
+  }
+
+  .title h2 {
+    background-color: none;
+  }
+
+  .containerCardsInfo{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .infoCard {
+    background-color: #160404;
+    width: 360px;
+    height: 304px;
+    border-radius: 40px;
+    padding-top: 6px;
+  }
+
+  .infoCard h5 {
+    text-align: center;
+    color: #e8d191;
+    font-family: "TAN - PEARL";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 26px !important;
+    margin-bottom: 0 !important;
+    border-bottom: none !important;
+  }
+
+  .infoCard p {
+    padding: 16px 20px;
+    line-height: 1.7;
+    color: #e8d191;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "TAN - PEARL";
+  }
+
+  /* Profile Cards */
+
+  .profileCard {
+    background-color: #160404;
+    width: 60%;
+    height: 125px;
+    border-radius: 40px;
+    margin: 0 auto;
+  }
+
+  .founderInfo {
+    flex-grow: 1;
+  }
+
+  .profileCard img {
+    width: 120px;
+    margin-left: 3%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .profileCard h6 {
+    color: #e8d191;
+    text-align: center;
+    font-family: "TAN - PEARL";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 8px;
+  }
+
+  .profileCard p {
+    color: #e8d191;
+    font-family: "TAN - PEARL";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    margin-top: 12px;
+  }
+}
