@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { useSession } from "./stores/useSession";
 import { useState } from "react";
@@ -23,8 +22,10 @@ import Support from "./components/UserSupport/Support";
 
 import Navbar from "./components/Common/Navbar";
 import Footer from "./components/Common/Footer";
+
 import ComeWebView from "./views/ComeWebView.jsx";
 import AboutUsView from "./views/AboutUsView.jsx";
+import ContactView from "./views/ContactView.jsx";
 
 const Router = () => {
   const [allProducts, setAllProducts] = useState([]);
@@ -57,7 +58,8 @@ const Router = () => {
           <Route path="/" element={<MenuView />} />
           <Route path="details" element={<DetailsView />} />
           <Route path="/ComeWeb" element={<ComeWebView />} />
-        <Route path="/AboutUs" element={<AboutUsView/>} />
+          <Route path="/Contact" element={<ContactView />} />
+          <Route path="/AboutUs" element={<AboutUsView />} />
           <Route path="admin" element={<AdminView />}>
             <Route index element={<AdminProducts />} />
             <Route path="users" element={<AdminUsers />} />
