@@ -1,7 +1,8 @@
-import "./CardModal.css";
+import './Modal.css'
 
-const CardModal = (props) => {
-  const { product } = props;
+const Modal = (props) => {
+
+  const { product } = props
 
   const handleSubmit = () => {
     const productInCart = {
@@ -10,36 +11,11 @@ const CardModal = (props) => {
       price: product.cost,
       ingredients: product.ingredients,
     };
-
+ 
     console.log(productInCart);
-  };
-
-  const shortText = (text) => {
-    if (text.length > 40) {
-      return text.substring(0, 40) + "...";
-    }
-    return text;
-  };
-
+  }
   return (
-    <div className="cardContainer">
-      <article
-        className="menuCard gap-2 mb-4"
-        data-bs-toggle="modal"
-        data-bs-target={`#modal-${product.id}`}
-      >
-        <div className="menuText ms-3">
-          <h5 className="foodTitle">{product.name}</h5>
-          <p className="foodInfo">{shortText(product.ingredients)}</p>
-          <p className="foodPrice">{product.cost}</p>
-        </div>
-        <div className="menuImage">
-          <img src={product.image} alt={product.name} />
-        </div>
-      </article>
-      <div />
-
-      <div
+    <div
         className="modal fade"
         id={`modal-${product.id}`}
         data-bs-backdrop="static"
@@ -84,8 +60,7 @@ const CardModal = (props) => {
           </div>
         </div>
       </div>
-    </div>
-  );
-};
+  )
+}
 
-export default CardModal;
+export default Modal

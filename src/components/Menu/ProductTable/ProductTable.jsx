@@ -1,16 +1,14 @@
-import CardModal from "../CardModal";
+import Card from "../Card/Card";
 
 const ProductTable = (props) => {
-  const { products } = props;
-
-  const filteredProducts = products.filter((product) => product.available);
+  const { products = [], openModal } = props;
 
   return (
-    <>
-      {filteredProducts.map((product) => (
-        <CardModal product={product} key={product.id} />
+    <div className="products-table d-flex flex-wrap justify-content-center">
+      {products.map((product) => (
+        <Card product={product} openModal={openModal} key={product.id} />
       ))}
-    </>
+    </div>
   );
 };
 

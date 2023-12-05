@@ -47,6 +47,14 @@
       "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "available": true,
       "id": "c68d7e8c-e248-42fd-a8c4-ee316834d774"
+    },
+    {
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "No disponible",
+      "cost": "100",
+      "ingredients": "No disponible flaco",
+      "available": false,
+      "id": "bfc12a34-dbc3-4534-995c-c767a344aad1"
     }
   ],
   "users": [

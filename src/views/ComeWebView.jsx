@@ -1,4 +1,4 @@
-import ComeWeb from "../components/ComeWeb/ComeWeb";
+import ComeWeb from "../components/ComeWeb/ComeWeb.jsx";
 
 const ComeWebView = () => {
   return (
