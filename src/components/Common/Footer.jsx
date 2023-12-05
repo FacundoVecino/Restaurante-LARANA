@@ -13,26 +13,26 @@ const Footer = () => {
           </div>
           <div className='col-sm-12 col-md-4 my-3 text-center'>
             <div className='my-3'>
-              <Link to="">Home</Link>
+              <Link to="/">Home</Link>
             </div>
             <div className='my-3'>
-              <Link to="">About us</Link>
+              <Link to="/AboutUs">About us</Link>
             </div>
             <div className='my-3'>
-              <Link to="">Contact us</Link>
+              <Link to="/Contact">Contact us</Link>
             </div>
             <div className='my-3'>
-              <Link to="">Cookies policy</Link>
+              <Link to="*">Cookies policy</Link>
             </div>
             <div className='my-3'>
-              <Link to="">Privacy policy</Link>
+              <Link to="*">Privacy policy</Link>
             </div>
           </div>
           <div className='col-sm-12 col-md-4 text-center my-3'>
             <h3 className='my-3'>Follow in</h3>
-            <Link to="https://www.instagram.com/" className='mx-3'><FaInstagram /></Link>
-            <Link to="https://www.facebook.com/"><FaFacebook /></Link>
-            <Link to="https://www.twitter.com/" className='mx-3'><FaTwitter /></Link>
+            <Link to="https://www.instagram.com/" className='mx-3' target="_blank"><FaInstagram /></Link>
+            <Link to="https://www.facebook.com/" target="_blank"><FaFacebook /></Link>
+            <Link to="https://www.twitter.com/" className='mx-3' target="_blank"><FaTwitter /></Link>
           </div>
         </div>
         <div className='my-3'>

@@ -25,6 +25,7 @@ import Navbar from "./components/Common/Navbar";
 import Footer from "./components/Common/Footer";
 import ComeWebView from "./views/ComeWebView.jsx";
 import AboutUsView from "./views/AboutUsView.jsx";
+import Contact from "./components/Contact/Contact.jsx"
 
 const Router = () => {
   const [allProducts, setAllProducts] = useState([]);
@@ -58,6 +59,7 @@ const Router = () => {
           <Route path="details" element={<DetailsView />} />
           <Route path="/ComeWeb" element={<ComeWebView />} />
         <Route path="/AboutUs" element={<AboutUsView/>} />
+        <Route path="/Contact" element={<Contact/>}/>
           <Route path="admin" element={<AdminView />}>
             <Route index element={<AdminProducts />} />
             <Route path="users" element={<AdminUsers />} />
