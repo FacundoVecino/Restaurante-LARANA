@@ -99,7 +99,7 @@ const Profile = () => {
   return (
     <section className="container">
       <div className="text-center mt-5">
-        <form onSubmit={onSubmitRHF(handleSubmit)}>
+        <form onSubmit={onSubmitRHF(handleSubmit)} className="container">
           <div className="d-flex">
             <Input
               name="firstname"
@@ -197,7 +197,7 @@ const Profile = () => {
             className="btnLogout my-3"
             onClick={handleLogout}
           >
-            <MdLogout /> Sign off
+            <MdLogout /> Sig off
           </button>
         )}
       </div>

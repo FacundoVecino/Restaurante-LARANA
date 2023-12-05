@@ -1,55 +1,54 @@
 {
   "products": [
     {
-      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Weekend_in_Buenos_Aires.jpg",
-      "name": "comida rica",
-      "cost": "$15,00",
-      "ingredients": "cosas cosas cosas cosas cosas cosas cosas cosas cosas cosas cosas cosas",
-      "available": true,
-      "id": "fba98e7c-7fbd-417e-96f4-2ca78d4212c6"
-    },
-    {
-      "image": "https://www.frigorificosada.com.ar/blog/wp-content/uploads/2023/07/Como-hacer-un-asado-argentino-a-la-parrilla.jpg",
-      "name": "Lasagna con manteca y algo mas",
-      "cost": "$81,00",
-      "ingredients": "La lasaña es posiblemente uno de los platos más populares de la cocina mundial. También es uno de nuestros platos preparados más exitosos, no en vano, disponemos de una amplia gama de lasañas congeladas, todas ellas deliciosas combinaciones de pasta fresca con riquísimos rellenos, desde los más tradicionales de boloñesa, a los más nuevos como el de 4 quesos o el vegetal. Incluso en Maheso elaboramos una lasaña sin gluten, apta para personas con celiaquía o intolerancia al gluten; y una lasaña con pasta integral, leche desnatada y carne de pavo y pollo, ideal para los que quieren mantener la línea.",
-      "available": true,
-      "id": "1b680157-f60f-4c9e-8c8c-b2c6495f63c2"
-    },
-    {
-      "image": "https://th.bing.com/th/id/OIG.b7fbyFnoRp_h0eDim7rl.jpg",
-      "name": "dasdsaadsasd",
-      "cost": "$62,00",
-      "ingredients": "cosas ricas eslaboradas en manskis oiasplñsapoo lsaorem socnuando ",
-      "available": true,
-      "id": "283f63fa-891c-41cc-848b-4801ef96c5d9"
-    },
-    {
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png",
-      "name": "lasagna",
-      "cost": "$50,00",
-      "ingredients": "sadsaddsadsasadsaddsadsasadsaddsadsasadsaddsadsasadsaddsadsasadsaddsadsa",
-      "available": true,
-      "id": "e75b2a83-6195-4cb2-afc0-59dd98986798"
-    },
-    {
-      "image": "https://www.frigorificosada.com.ar/blog/wp-content/uploads/2023/07/Como-hacer-un-asado-argentino-a-la-parrilla.jpg",
-      "name": "sssssssssssssssss",
-      "cost": "$43,00",
-      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaa",
-      "available": true,
-      "id": "e92a9772-5d10-4fff-b5f8-a8d034e43159"
-    },
-    {
-      "image": "https://www.frigorificosada.com.ar/blog/wp-content/uploads/2023/07/Como-hacer-un-asado-argentino-a-la-parrilla.jpg",
-      "name": "zzzzzzzzzzzzzzz",
-      "cost": "$13,00",
-      "ingredients": "azzzzzzzzzzzzzzzzz",
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "Ezequiel",
+      "cost": "11",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "available": false,
-      "id": "ff07964e-12b0-4cf9-b570-c89120993610"
+      "id": "1135dfe3-d59a-4f13-924a-d6cd17b1a4da"
+    },
+    {
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "UCSE Mensual",
+      "cost": "100",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": true,
+      "id": "98d3dda1-e625-48ce-a748-2c1a0215afb3"
+    },
+    {
+      "image": "https://s3.abcstatics.com/media/gurmesevilla/2012/01/comida-rapida-casera.jpg",
+      "name": "UCSE Mensual",
+      "cost": "10000",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": false,
+      "id": "b26363b2-dbc0-408b-ab4d-b3b7d94f7584"
+    },
+    {
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "Facundo",
+      "cost": "12121",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": true,
+      "id": "59144417-cd3d-4ee9-af17-6d2b4abf76b0"
+    },
+    {
+      "image": "https://s3.abcstatics.com/media/gurmesevilla/2012/01/comida-rapida-casera.jpg",
+      "name": "aaaaaa",
+      "cost": "1000",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": true,
+      "id": "c9f2e2ae-32af-4d51-828c-20bc21d624db"
+    },
+    {
+      "image": "https://lalinternadeltraductor.org/wp-content/uploads/juego-calamar-traduccion-648x470.jpg",
+      "name": "Facundo",
+      "cost": "100",
+      "ingredients": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "available": true,
+      "id": "c68d7e8c-e248-42fd-a8c4-ee316834d774"
     }
   ],
-
   "users": [
     {
       "firstname": "Mauricio",
@@ -61,103 +60,13 @@
       "id": 1
     },
     {
-      "firstname": "nel",
-      "lastname": "Gunsettff",
-      "username": "maudd",
-      "email": "mau_gunsett@hotmail.comdd",
-      "password": "aA1*bbbb",
+      "firstname": "Facundo",
+      "lastname": "Vecino",
+      "username": "FacundoV",
+      "email": "facundovecino32@gmail.com",
+      "password": "Fnv240804",
       "isAdmin": false,
       "id": 2
-    },
-    {
-      "firstname": "awsfadfd",
-      "lastname": "Gunsett",
-      "username": "mau_gunsett@hotmail.com",
-      "email": "mau_gunsett@hotmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false,
-      "id": 3
-    },
-    {
-      "firstname": "Nadie",
-      "lastname": "Nadie",
-      "username": "Nadie",
-      "email": "mau_gunsett@hotmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false,
-      "id": 4
-    },
-    {
-      "firstname": "Mauricio",
-      "lastname": "Gunsett",
-      "username": "Nadie",
-      "email": "mau_gunsett@hotmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false,
-      "id": 5
-    },
-    {
-      "firstname": "Mauricio",
-      "lastname": "Nadie",
-      "username": "Mauricio",
-      "email": "mau_gunsett@hotmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false,
-      "id": 6
-    },
-    {
-      "firstname": "Mauricio",
-      "lastname": "Gunsett",
-      "username": "mau_gunsett@hotmail.com",
-      "email": "mauricioloana@hotmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false,
-      "id": 7
-    },
-    {
-      "firstname": "Mauricio",
-      "lastname": "Gunsett",
-      "username": "mau_gunsett@hotmail.com",
-      "email": "mau_gunsett@hotmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false,
-      "id": 8
-    },
-    {
-      "firstname": "Mauricio",
-      "lastname": "Gunsett",
-      "username": "mau_gunsett@hotmail.com",
-      "email": "mau_gunsett@hotmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false,
-      "id": 9
-    },
-    {
-      "firstname": "Mauricio",
-      "lastname": "Gunsett",
-      "username": "aaaaa",
-      "email": "mau_gunsett@hotmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false,
-      "id": 10
-    },
-    {
-      "firstname": "Mauricio",
-      "lastname": "Gunsett",
-      "username": "mau_gunsett@hotmail.com",
-      "email": "belinda_erips_8@hotmail.com",
-      "password": "Aa1*bbbb",
-      "isAdmin": false,
-      "id": 11
-    },
-    {
-      "firstname": "Mauricio",
-      "lastname": "Gunsett",
-      "username": "mau_gunsett@hotmail.com",
-      "email": "mau_gunsett@hotmail.com",
-      "password": "aA1*bbbb",
-      "isAdmin": false,
-      "id": 12
     }
   ]
 }

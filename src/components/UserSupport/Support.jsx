@@ -42,7 +42,7 @@ const Support = () => {
             className="btnLogout mt-5"
             onClick={handleLogout}
           >
-            <MdLogout /> Sign off
+            <MdLogout /> Sig off
           </button>
         )}
       </div>

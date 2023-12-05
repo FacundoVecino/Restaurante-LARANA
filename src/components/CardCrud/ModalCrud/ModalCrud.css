@@ -1,20 +1,17 @@
-/* ModalMenu.css */
-
 .modal-content {
-  background-color: rgba(0, 0, 0, 0) !important;
-  margin-top: 8rem;
-  border: none !important;
+  margin-top: 8rem !important;
 }
 
 .customModal {
   margin-bottom: 1px;
   margin-left: 3px;
   border-radius: 0;
+  border: none !important;
 }
 
 .card-img-top {
   object-fit: cover;
-  height: 180px;
+  height: 180px !important;
   width: 100%;
 }
 
@@ -22,33 +19,43 @@
   background-color: #33000a;
   border: none;
   filter: brightness(1.2);
-}
-
-.card-title {
-  color: #fff;
-  font-size: 23px;
-  line-height: normal;
-  border: none;
-}
-
-.scrollText {
-  max-height: 150px;
-  overflow: auto;
-}
-
-.card-text {
-  color: #a5a5a5;
-}
-
-.customBtnModal {
-  width: 70%;
-  background-color: #730014;
-  color: #e8d191;
-  border: none;
-  border-radius: 40px;
-  font-size: 23px;
+  color: #e8d191 !important;
 }
 
 .btn-close {
-  background-color: #ca0c2b;
+  position: absolute;
+  font-size: 16px;
+  color: #000 !important;
+}
+
+.btn-edit {
+  font-family: 'Nunito';
+  display: inline-block;
+  border-radius: 20px !important;
+  padding: 1em;
+  border: none;
+  background: #554b4d;
+  outline: none;
+  color: #e8d191;
+}
+
+.btn-delete {
+  font-family: 'Nunito';
+  display: inline-block;
+  border-radius: 20px !important;
+  padding: 1em;
+  border: none;
+  background: #730014;
+  outline: none;
+  color: #e8d191;
+}
+
+.btn-edit:hover {
+  transition: 400ms ease;
+  background: #6e6365;
+}
+
+.btn-delete:hover {
+  transition: 400ms ease;
+  background: #54000e;
 }

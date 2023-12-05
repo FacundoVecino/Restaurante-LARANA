@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'TAN-PEARL-Regular';
+  src: url(../src/assets/fonts/TAN-PEARL-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../src/assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,24 +36,6 @@ footer {
   background: #2e0008;
   flex-shrink: 0;
 }
-
-@font-face {
-  font-family: "Nunito";
-  src: url(./assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
-}
-
-
- @font-face {
-    font-family: 'TAN-PEARL-Regular';
-    src: url(./assets/fonts/TAN-PEARL-Regular.otf);
-  } 
-  
-
-  body {
-    font-family: 'TAN-PEARL-Regular';
-    color: #E8D191;
-    background-color: #4D000D;
-  }
 
 .navbar {
   position: fixed;

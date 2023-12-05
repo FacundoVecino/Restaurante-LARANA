@@ -72,12 +72,13 @@
 }
 
 .buttonSave {
-  background: #160404f2;
+  background: #4d000d;
   color: #e8d191;
   border-radius: 12px;
   width: 100px;
   font-size: 24px;
   border: none;
+  padding: 10px;
 }
 
 .buttonSave:hover {

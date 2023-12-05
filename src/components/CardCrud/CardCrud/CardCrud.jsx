@@ -1,25 +1,22 @@
-import { FaEdit } from "react-icons/fa";
-import "./CardCrud.css";
+import { FaEdit } from 'react-icons/fa';
+import './CardCrud.css';
 
-const CardCrud = (props) => {
-  const { product } = props;
+const CardCrud = ({ product, openModal }) => {
+
 
   return (
-    <article className="menuCard card d-flex flex-row my-4">
+    <article className="menuCard card d-flex flex-row my-2">
       <div className="menuImage">
-        <img
-          src={product.image}
-          className="object-fit-cover"
-          alt={product.name}
-        />
+        <img src={product.image} className="object-fit-cover" alt={product.name} />
       </div>
       <div className="menuText p-4 flex-grow-1">
         <h5>{product.name}</h5>
-        <p className="foodPrice">{product.cost}</p>
+        <p className="foodPrice">${product.cost}</p>
       </div>
       <div className="d-flex align-items-center px-4">
         <button
           className="button-edit"
+          onClick={() => openModal(product)}
           data-bs-toggle="modal"
           data-bs-target="#modalCard"
         >
